@@ -10,7 +10,7 @@ description: MIT 6.100L 第 24 讲：Sorting Algorithms。含视频、讲义与�
 <OcwVideo id="R8Rw9mIa7JQ" title="Lecture 24: Sorting Algorithms" captions="/ocw/6.100l-fall-2022/lec24-captions.vtt" />
 
 ::: tip 播放器用法
-播放时视频上会浮动当前语句；点「网页全屏」可铺满整个浏览器窗口（Esc 或点黑边退出）；展开「逐句字幕」能按时间跳转，当前句自动高亮并保持在面板中央。
+播放时会浮出一句可拖动的字幕（可拖到任意位置，双击复位，× 关闭）；点「网页全屏」进入「左侧视频 + 右侧逐句字幕」的大屏布局（Esc 或点黑边退出）；正文里的「逐句字幕」面板能按时间跳转，当前句自动高亮并保持在面板中央。
 :::
 
 ## 本讲资料

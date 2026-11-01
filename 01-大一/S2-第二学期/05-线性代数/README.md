@@ -7,7 +7,7 @@
 ## 主教材
 
 Gilbert Strang, *Introduction to Linear Algebra*, 6th Edition, 2023。\
-教材信息：https://math.mit.edu/\~gs/linearalgebra/
+教材信息：<https://math.mit.edu/~gs/linearalgebra/>
 
 ## 主课程
 

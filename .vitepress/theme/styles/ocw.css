@@ -150,31 +150,74 @@
   background: #000;
 }
 
-/* 悬浮字幕 --------------------------------------------------------------- */
+/* 悬浮字幕（页面级浮层，可拖动） ----------------------------------------- */
 
 .ocw-video__subs {
-  position: absolute;
-  bottom: clamp(10px, 4%, 34px);
-  left: 50%;
-  z-index: 3;
-  max-width: min(88%, 900px);
+  position: fixed;
+  z-index: 200;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: min(72vw, 900px);
   margin: 0;
-  padding: 7px 16px;
-  font-size: calc(15px * var(--ocw-sub-scale, 1));
+  padding: 7px 10px 7px 16px;
+  font-size: calc(clamp(15px, 1.05vw, 22px) * var(--ocw-sub-scale, 1));
   font-weight: 550;
   line-height: 1.5;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-  background: rgba(8, 12, 20, 0.74);
-  border-radius: 8px;
+  background: rgba(8, 12, 20, 0.78);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
-  transform: translateX(-50%);
-  pointer-events: none;
-  transition: font-size 0.15s ease;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  transition: background 0.15s ease, opacity 0.15s ease;
 }
 
-/* 网页全屏（页面内铺满，不是 YouTube 自身的全屏） ------------------------ */
+.ocw-video__subs:hover {
+  background: rgba(8, 12, 20, 0.9);
+}
+
+.ocw-video__subs.is-dragging {
+  cursor: grabbing;
+  background: rgba(8, 12, 20, 0.94);
+}
+
+.ocw-video__subs-text {
+  min-width: 0;
+}
+
+.ocw-video__subs-close {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.72);
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 50%;
+}
+
+.ocw-video__subs-close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.ocw-video--dragging {
+  user-select: none;
+}
+
+/* 网页全屏（页面内铺满，不是 YouTube 自身的全屏）：左侧视频 + 右侧逐句字幕 -- */
 
 body.ocw-theater-open {
   overflow: hidden;
@@ -184,10 +227,15 @@ body.ocw-theater-open {
   position: fixed;
   inset: 0;
   z-index: 120;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #000;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(300px, 26vw, 420px);
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-areas:
+    'bar bar'
+    'frame panel';
+  gap: 12px 16px;
+  padding: 12px 16px 16px;
+  background: #05070b;
 }
 
 /* `.vp-doc figure` 自带 24px 外边距，全屏时必须覆盖掉 */
@@ -196,8 +244,10 @@ body.ocw-theater-open {
 }
 
 .vp-doc .ocw-video--theater .ocw-video__frame {
-  width: min(100vw, calc(100vh * 16 / 9));
-  max-height: 100vh;
+  grid-area: frame;
+  align-self: center;
+  justify-self: center;
+  width: min(100%, calc((100vh - 110px) * 16 / 9));
   border: 0;
   border-radius: 0;
 }
@@ -206,53 +256,89 @@ body.ocw-theater-open {
   display: none;
 }
 
-.ocw-video--theater .ocw-video__subs {
-  bottom: 9%;
-  max-width: min(80%, 1180px);
-  font-size: calc(22px * var(--ocw-sub-scale, 1));
-}
+/* 全屏顶栏：标题与操作不压在画面上 */
 
-.ocw-video__overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 4;
+.ocw-video__theater-bar {
+  grid-area: bar;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px 14px;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
-  background: linear-gradient(to bottom, rgba(4, 8, 14, 0.85), transparent);
+  min-height: 32px;
 }
 
-.ocw-video__overlay-title {
+.ocw-video__theater-title {
   overflow: hidden;
   font-size: 13px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(255, 255, 255, 0.88);
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.ocw-video__overlay-actions {
+.ocw-video__theater-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   align-items: center;
   margin-left: auto;
 }
 
-.ocw-video__overlay .ocw-video__btn {
+.ocw-video__theater-actions a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ocw-video__theater-actions a:hover {
+  color: #fff;
+}
+
+.ocw-video__theater-bar .ocw-video__btn {
   color: #fff;
   background: rgba(255, 255, 255, 0.14);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.ocw-video__overlay .ocw-video__btn:hover {
+.ocw-video__theater-bar .ocw-video__btn:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.26);
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 全屏时逐句字幕变成右侧栏 */
+
+.ocw-video--theater .ocw-transcript {
+  grid-area: panel;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  margin: 0;
+  background: var(--vp-c-bg);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.ocw-video--theater .ocw-transcript__panel {
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+}
+
+@media (max-width: 980px) {
+  .ocw-video--theater {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-areas:
+      'bar'
+      'frame'
+      'panel';
+  }
+
+  .vp-doc .ocw-video--theater .ocw-video__frame {
+    width: 100%;
+  }
 }
 
 /* 说明栏与按钮 ----------------------------------------------------------- */
@@ -329,11 +415,11 @@ body.ocw-theater-open {
     font-size: calc(15px * var(--ocw-sub-scale, 1));
   }
 
-  .ocw-video__overlay {
-    padding: 8px 10px;
+  .ocw-video__theater-bar {
+    padding: 0;
   }
 
-  .ocw-video__overlay-title {
+  .ocw-video__theater-title {
     display: none;
   }
 
@@ -377,6 +463,14 @@ body.ocw-theater-open {
 
 .ocw-transcript__toggle:hover {
   background: var(--vp-c-brand-soft);
+}
+
+.ocw-transcript__head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--cs-border);
 }
 
 .ocw-transcript__caret {

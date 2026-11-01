@@ -8,8 +8,8 @@
 
 Eric Lehman、F. Thomson Leighton、Albert Meyer, *Mathematics for
 Computer Science*。MIT 官方开放教材。\
-教材入口：https://courses.csail.mit.edu/6.042/\
-公开课程版本：https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/
+教材入口：<https://courses.csail.mit.edu/6.042/>\
+公开课程版本：<https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/>
 
 ## 主课程
 

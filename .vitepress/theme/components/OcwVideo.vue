@@ -23,6 +23,9 @@ const props = defineProps<{
   captions?: string
 }>()
 
+const POS_KEY = 'ocw-subtitle-position'
+const DEFAULT_POS = { x: 50, y: 86 }
+
 const poster = computed(() => `https://img.youtube.com/vi/${props.id}/hqdefault.jpg`)
 const watchUrl = computed(() => `https://www.youtube.com/watch?v=${props.id}`)
 /** 部署到子路径（GitHub Pages 的 /CS-AI-Learning/）时，字幕文件也要跟着加 base */
@@ -40,6 +43,11 @@ const cues = shallowRef<Cue[]>([])
 const playerHost = ref<HTMLElement | null>(null)
 const panelEl = ref<HTMLElement | null>(null)
 
+/* 悬浮字幕：位置用相对视频框的百分比，可拖动、可记住 */
+const subPos = ref({ ...DEFAULT_POS })
+const dragging = ref(false)
+
+let dragOffset = { x: 0, y: 0 }
 let player: any = null
 let ticker: number | null = null
 let apiPromise: Promise<any> | null = null
@@ -47,13 +55,23 @@ let pendingSeek: number | null = null
 
 const rootClass = computed(() => ({
   'ocw-video--theater': theater.value,
-  'ocw-video--playing': state.value === 'playing'
+  'ocw-video--playing': state.value === 'playing',
+  'ocw-video--dragging': dragging.value
 }))
-const rootStyle = computed(() => ({ '--ocw-sub-scale': String(subtitleScale.value) }))
+const rootStyle = computed(() => ({
+  '--ocw-sub-scale': String(subtitleScale.value)
+}))
+/** 悬浮字幕是 Teleport 到 body 的页面级浮层，位置按视口百分比计算 */
+const subStyle = computed(() => ({
+  left: `${subPos.value.x}%`,
+  top: `${subPos.value.y}%`,
+  '--ocw-sub-scale': String(subtitleScale.value)
+}))
 const subtitleVisible = computed(
   () => state.value === 'playing' && showSubtitles.value && Boolean(currentCue.value)
 )
 const hasSubtitles = computed(() => cues.value.length > 0)
+const panelVisible = computed(() => panelOpen.value || theater.value)
 const durationLabel = computed(() => {
   const last = cues.value[cues.value.length - 1]
   return last ? formatTime(last.end) : ''
@@ -232,7 +250,7 @@ function centerActiveRow(behavior: ScrollBehavior = 'smooth') {
 }
 
 watch(activeIndex, () => {
-  if (!panelOpen.value || !follow.value) return
+  if (!panelVisible.value || !follow.value) return
   void nextTick(() => centerActiveRow())
 })
 
@@ -259,6 +277,48 @@ function seekTo(cue: Cue) {
   }
 }
 
+/* ------------------------------------------------------------ 悬浮字幕拖动 */
+
+function clamp(value: number, min: number, max: number) {
+  return Math.min(max, Math.max(min, value))
+}
+
+function onSubPointerDown(event: PointerEvent) {
+  const target = event.currentTarget as HTMLElement | null
+  if (!target) return
+  target.setPointerCapture?.(event.pointerId)
+  dragging.value = true
+  const centerX = (window.innerWidth * subPos.value.x) / 100
+  const centerY = (window.innerHeight * subPos.value.y) / 100
+  dragOffset = { x: event.clientX - centerX, y: event.clientY - centerY }
+}
+
+function onSubPointerMove(event: PointerEvent) {
+  if (!dragging.value) return
+  const x = ((event.clientX - dragOffset.x) / window.innerWidth) * 100
+  const y = ((event.clientY - dragOffset.y) / window.innerHeight) * 100
+  subPos.value = { x: clamp(x, 8, 92), y: clamp(y, 6, 94) }
+}
+
+function onSubPointerUp() {
+  if (!dragging.value) return
+  dragging.value = false
+  try {
+    localStorage.setItem(POS_KEY, JSON.stringify(subPos.value))
+  } catch {
+    /* 隐私模式下写入失败可忽略 */
+  }
+}
+
+function resetSubPos() {
+  subPos.value = { ...DEFAULT_POS }
+  try {
+    localStorage.removeItem(POS_KEY)
+  } catch {
+    /* 忽略 */
+  }
+}
+
 /* ------------------------------------------------------------ 网页全屏与快捷键 */
 
 function toggleTheater() {
@@ -277,10 +337,23 @@ function onKeydown(event: KeyboardEvent) {
 watch(theater, (on) => {
   if (typeof document === 'undefined') return
   document.body.classList.toggle('ocw-theater-open', on)
+  if (on) follow.value = true
+  void nextTick(() => centerActiveRow('auto'))
 })
 
 onMounted(async () => {
   window.addEventListener('keydown', onKeydown)
+  try {
+    const saved = localStorage.getItem(POS_KEY)
+    if (saved) {
+      const parsed = JSON.parse(saved) as { x?: number; y?: number }
+      if (typeof parsed.x === 'number' && typeof parsed.y === 'number') {
+        subPos.value = { x: clamp(parsed.x, 10, 90), y: clamp(parsed.y, 8, 94) }
+      }
+    }
+  } catch {
+    /* 忽略损坏的本地记录 */
+  }
   if (!captionSrc.value) return
   try {
     const response = await fetch(captionSrc.value)
@@ -306,6 +379,23 @@ onBeforeUnmount(() => {
 
 <template>
   <figure class="ocw-video" :class="rootClass" :style="rootStyle" @click.self="onBackdropClick">
+    <div v-if="theater" class="ocw-video__theater-bar">
+      <span class="ocw-video__theater-title">{{ title }}</span>
+      <span class="ocw-video__theater-actions">
+        <button
+          v-if="hasSubtitles"
+          type="button"
+          class="ocw-video__btn"
+          :aria-pressed="showSubtitles"
+          @click="showSubtitles = !showSubtitles"
+        >
+          {{ showSubtitles ? '关闭字幕' : '显示字幕' }}
+        </button>
+        <a :href="watchUrl" target="_blank" rel="noreferrer">在 YouTube 打开</a>
+        <button type="button" class="ocw-video__btn" @click="toggleTheater">退出网页全屏</button>
+      </span>
+    </div>
+
     <div class="ocw-video__frame">
       <div ref="playerHost" class="ocw-video__player" :class="{ 'is-idle': state === 'idle' }" />
 
@@ -324,24 +414,6 @@ onBeforeUnmount(() => {
       <p v-else-if="state === 'error'" class="ocw-video__status">
         播放器加载失败，请点「在 YouTube 打开」观看。
       </p>
-
-      <p v-if="subtitleVisible" class="ocw-video__subs">{{ currentCue }}</p>
-
-      <div v-if="theater" class="ocw-video__overlay">
-        <span class="ocw-video__overlay-title">{{ title }}</span>
-        <div class="ocw-video__overlay-actions">
-          <button
-            v-if="hasSubtitles"
-            type="button"
-            class="ocw-video__btn"
-            :aria-pressed="showSubtitles"
-            @click="showSubtitles = !showSubtitles"
-          >
-            {{ showSubtitles ? '关闭字幕' : '显示字幕' }}
-          </button>
-          <button type="button" class="ocw-video__btn" @click="toggleTheater">退出网页全屏</button>
-        </div>
-      </div>
     </div>
 
     <figcaption class="ocw-video__note">
@@ -382,8 +454,9 @@ onBeforeUnmount(() => {
       </span>
     </figcaption>
 
-    <section v-if="hasSubtitles && !theater" class="ocw-transcript">
+    <section v-if="hasSubtitles" class="ocw-transcript" :class="{ 'is-theater': theater }">
       <button
+        v-if="!theater"
         type="button"
         class="ocw-transcript__toggle"
         :aria-expanded="panelOpen"
@@ -394,9 +467,13 @@ onBeforeUnmount(() => {
         <span class="ocw-transcript__meta">English · {{ cues.length }} 句 · {{ durationLabel }}</span>
         <span class="ocw-transcript__action">{{ panelOpen ? '收起' : '展开' }}</span>
       </button>
+      <div v-else class="ocw-transcript__head">
+        <span class="ocw-transcript__label">逐句字幕</span>
+        <span class="ocw-transcript__meta">English · {{ cues.length }} 句 · {{ durationLabel }}</span>
+      </div>
 
       <div
-        v-if="panelOpen"
+        v-if="panelVisible"
         ref="panelEl"
         class="ocw-transcript__panel"
         @wheel.passive="follow = false"
@@ -429,4 +506,32 @@ onBeforeUnmount(() => {
       </div>
     </section>
   </figure>
+
+  <!-- 页面级悬浮字幕：挂到 body，脱离视频框，可拖到任意位置 -->
+  <Teleport to="body">
+    <div
+      v-if="subtitleVisible"
+      class="ocw-video__subs"
+      :class="{ 'is-dragging': dragging }"
+      :style="subStyle"
+      title="按住可拖到任意位置，双击复位"
+      @pointerdown.prevent="onSubPointerDown"
+      @pointermove="onSubPointerMove"
+      @pointerup="onSubPointerUp"
+      @pointercancel="onSubPointerUp"
+      @dblclick="resetSubPos"
+    >
+      <span class="ocw-video__subs-text">{{ currentCue }}</span>
+      <button
+        type="button"
+        class="ocw-video__subs-close"
+        aria-label="关闭悬浮字幕"
+        title="关闭悬浮字幕"
+        @pointerdown.stop
+        @click.stop="showSubtitles = false"
+      >
+        ×
+      </button>
+    </div>
+  </Teleport>
 </template>

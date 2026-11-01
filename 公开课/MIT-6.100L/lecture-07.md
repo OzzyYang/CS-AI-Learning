@@ -10,7 +10,7 @@ description: MIT 6.100L 第 7 讲：Decomposition, Abstraction, Functions。含�
 <OcwVideo id="Qf6OVR8MLnU" title="Lecture 7: Decomposition, Abstraction, Functions" captions="/ocw/6.100l-fall-2022/lec07-captions.vtt" />
 
 ::: tip 播放器用法
-播放时视频上会浮动当前语句；点「网页全屏」可铺满整个浏览器窗口（Esc 或点黑边退出）；展开「逐句字幕」能按时间跳转，当前句自动高亮并保持在面板中央。
+播放时会浮出一句可拖动的字幕（可拖到任意位置，双击复位，× 关闭）；点「网页全屏」进入「左侧视频 + 右侧逐句字幕」的大屏布局（Esc 或点黑边退出）；正文里的「逐句字幕」面板能按时间跳转，当前句自动高亮并保持在面板中央。
 :::
 
 ## 本讲资料

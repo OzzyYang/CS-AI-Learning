@@ -59,6 +59,15 @@ for (const file of htmlFiles) {
   for (const match of html.matchAll(attrPattern)) {
     const raw = match[1]
     if (!raw) continue
+
+    // Markdown 行尾的 `\` 是硬换行；若紧跟在裸 URL 后面会被并进链接，变成 `%5C` 死链。
+    if (/%5c|\\/i.test(raw)) {
+      failures.push(
+        `${relativePage} → ${raw}（链接里混进了反斜杠，检查该行行尾的 \`\\\` 是否是硬换行）`
+      )
+      continue
+    }
+
     if (
       /^(?:https?:)?\/\//i.test(raw) ||
       /^(?:mailto:|tel:|javascript:|data:)/i.test(raw) ||
