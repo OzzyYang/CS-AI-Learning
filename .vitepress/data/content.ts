@@ -5,6 +5,7 @@ import type {
   CourseEntry,
   CurriculumData,
   LabEntry,
+  OcwEntry,
   RecentEntry,
   RelatedGroups,
   RelatedItem,
@@ -19,6 +20,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const PLAN_DIR = '00-培养方案'
 const TOPIC_DIR = '知识专题'
 const LAB_DIR = '交互实验'
+const OCW_DIR = '公开课'
 
 interface Doc {
   file: string
@@ -371,10 +373,59 @@ function readLabs(topics: TopicEntry[]) {
   return labs.sort((a, b) => a.order - b.order)
 }
 
+/**
+ * 公开课镜像：`公开课/<课程目录>/README.md` 是课程主页，
+ * `lecture-NN.md` 是讲次页面。两者都由 `scripts/ocw/add-course.mjs` 生成。
+ */
+function readOcw() {
+  const dir = path.join(ROOT, OCW_DIR)
+  if (!fs.existsSync(dir)) return [] as OcwEntry[]
+
+  const courses: OcwEntry[] = []
+  const entries = fs
+    .readdirSync(dir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .sort((a, b) => naturalCompare(a.name, b.name))
+
+  for (const entry of entries) {
+    const coursePath = path.join(dir, entry.name)
+    const readme = path.join(coursePath, 'README.md')
+    if (!fs.existsSync(readme)) continue
+
+    const doc = readDoc(readme)
+    const lectures = fs
+      .readdirSync(coursePath)
+      .filter((file) => /^lecture-\d+\.md$/.test(file))
+      .sort(naturalCompare)
+      .map((file) => {
+        const lecture = readDoc(path.join(coursePath, file))
+        return {
+          label: text(lecture.data.title) || lecture.h1 || file.replace(/\.md$/, ''),
+          link: `/${OCW_DIR}/${entry.name}/${file.replace(/\.md$/, '')}.html`
+        }
+      })
+
+    courses.push({
+      title: text(doc.data.title) || doc.h1 || entry.name,
+      dir: entry.name,
+      route: `/${OCW_DIR}/${entry.name}/`,
+      href: `/${OCW_DIR}/${entry.name}/`,
+      order: Number(text(doc.data.order, '99')),
+      description: text(doc.data.description),
+      source: text(doc.data.source),
+      lectureCount: lectures.length,
+      lectures
+    })
+  }
+
+  return courses.sort((a, b) => a.order - b.order || naturalCompare(a.title, b.title))
+}
+
 export function buildContent(): CurriculumData {
   const years = readYears()
   const topics = readTopics()
   const labs = readLabs(topics)
+  const ocw = readOcw()
 
   const allCourses = years.flatMap((year) => year.courses)
   const courseIndex = new Map<string, CourseEntry>()
@@ -542,6 +593,7 @@ export function buildContent(): CurriculumData {
     totals,
     topics,
     labs,
+    ocw,
     recent: recent.slice(0, 8),
     related
   }

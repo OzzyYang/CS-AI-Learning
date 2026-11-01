@@ -5,6 +5,7 @@ import Layout from './Layout.vue'
 import HomePage from './components/HomePage.vue'
 import CatalogGrid from './components/CatalogGrid.vue'
 import YearOverview from './components/YearOverview.vue'
+import OcwVideo from './components/OcwVideo.vue'
 
 import BinaryConverter from './components/labs/BinaryConverter.vue'
 import SortingVisualizer from './components/labs/SortingVisualizer.vue'
@@ -16,6 +17,7 @@ import 'katex/dist/katex.min.css'
 import './styles/base.css'
 import './styles/content.css'
 import './styles/lab.css'
+import './styles/ocw.css'
 
 export default {
   extends: DefaultTheme,
@@ -24,6 +26,7 @@ export default {
     app.component('HomePage', HomePage)
     app.component('CatalogGrid', CatalogGrid)
     app.component('YearOverview', YearOverview)
+    app.component('OcwVideo', OcwVideo)
 
     app.component('BinaryConverter', BinaryConverter)
     app.component('SortingVisualizer', SortingVisualizer)

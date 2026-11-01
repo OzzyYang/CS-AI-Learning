@@ -1,0 +1,487 @@
+/* ==========================================================================
+   CS-AI-Learning · 公开课镜像（MIT OCW）
+   ========================================================================== */
+
+/* 课程元信息（脚本生成的 <dl class="ocw-facts">） ---------------------- */
+
+.vp-doc .ocw-facts {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  margin: 22px 0 26px;
+  padding: 4px 18px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--cs-border);
+  border-radius: var(--cs-radius-md);
+}
+
+.vp-doc .ocw-facts dt {
+  padding: 10px 18px 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  white-space: nowrap;
+  border-bottom: 1px solid var(--cs-border);
+}
+
+.vp-doc .ocw-facts dd {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--vp-c-text-1);
+  border-bottom: 1px solid var(--cs-border);
+}
+
+.vp-doc .ocw-facts dt:last-of-type,
+.vp-doc .ocw-facts dd:last-of-type {
+  border-bottom: 0;
+}
+
+.vp-doc .ocw-facts a {
+  font-weight: 500;
+}
+
+/* 视频播放器 ------------------------------------------------------------- */
+
+.ocw-video {
+  position: relative;
+  margin: 22px 0 30px;
+}
+
+.ocw-video__frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--cs-border);
+  border-radius: var(--cs-radius-md);
+}
+
+.ocw-video__player {
+  width: 100%;
+  height: 100%;
+}
+
+.ocw-video__player.is-idle {
+  display: none;
+}
+
+.ocw-video__frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.ocw-video__poster {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: #000;
+  cursor: pointer;
+}
+
+.ocw-video__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.68;
+  transition: opacity 0.2s ease, transform 0.35s ease;
+}
+
+.ocw-video__poster:hover img,
+.ocw-video__poster:focus-visible img {
+  opacity: 0.88;
+  transform: scale(1.015);
+}
+
+.ocw-video__play {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  padding-left: 4px;
+  font-size: 22px;
+  color: #fff;
+  background: rgba(15, 118, 110, 0.92);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.ocw-video__poster:hover .ocw-video__play {
+  transform: scale(1.06);
+}
+
+.ocw-video__label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 34px 16px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72), transparent);
+}
+
+.ocw-video__status {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  background: #000;
+}
+
+/* 悬浮字幕 --------------------------------------------------------------- */
+
+.ocw-video__subs {
+  position: absolute;
+  bottom: clamp(10px, 4%, 34px);
+  left: 50%;
+  z-index: 3;
+  max-width: min(88%, 900px);
+  margin: 0;
+  padding: 7px 16px;
+  font-size: calc(15px * var(--ocw-sub-scale, 1));
+  font-weight: 550;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+  background: rgba(8, 12, 20, 0.74);
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  transform: translateX(-50%);
+  pointer-events: none;
+  transition: font-size 0.15s ease;
+}
+
+/* 网页全屏（页面内铺满，不是 YouTube 自身的全屏） ------------------------ */
+
+body.ocw-theater-open {
+  overflow: hidden;
+}
+
+.ocw-video--theater {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+/* `.vp-doc figure` 自带 24px 外边距，全屏时必须覆盖掉 */
+.vp-doc figure.ocw-video--theater {
+  margin: 0;
+}
+
+.vp-doc .ocw-video--theater .ocw-video__frame {
+  width: min(100vw, calc(100vh * 16 / 9));
+  max-height: 100vh;
+  border: 0;
+  border-radius: 0;
+}
+
+.ocw-video--theater .ocw-video__note {
+  display: none;
+}
+
+.ocw-video--theater .ocw-video__subs {
+  bottom: 9%;
+  max-width: min(80%, 1180px);
+  font-size: calc(22px * var(--ocw-sub-scale, 1));
+}
+
+.ocw-video__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: linear-gradient(to bottom, rgba(4, 8, 14, 0.85), transparent);
+}
+
+.ocw-video__overlay-title {
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ocw-video__overlay-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.ocw-video__overlay .ocw-video__btn {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.ocw-video__overlay .ocw-video__btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.26);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 说明栏与按钮 ----------------------------------------------------------- */
+
+.ocw-video__note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--vp-c-text-3);
+}
+
+.ocw-video__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.ocw-video__note a {
+  color: var(--vp-c-text-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ocw-video__note a:hover {
+  color: var(--cs-accent);
+}
+
+.ocw-video__btn {
+  padding: 2px 9px;
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg);
+  border: 1px solid var(--cs-border);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.ocw-video__btn:hover {
+  color: var(--vp-c-brand-1);
+  border-color: var(--cs-border-strong);
+}
+
+.ocw-video__btn:focus-visible {
+  outline: 2px solid var(--vp-c-brand-2);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .ocw-video__play {
+    width: 54px;
+    height: 54px;
+    font-size: 18px;
+  }
+
+  .ocw-video__label {
+    padding: 24px 12px 10px;
+    font-size: 12px;
+  }
+
+  .ocw-video__subs {
+    padding: 6px 11px;
+    font-size: calc(13.5px * var(--ocw-sub-scale, 1));
+  }
+
+  .ocw-video--theater .ocw-video__subs {
+    font-size: calc(15px * var(--ocw-sub-scale, 1));
+  }
+
+  .ocw-video__overlay {
+    padding: 8px 10px;
+  }
+
+  .ocw-video__overlay-title {
+    display: none;
+  }
+
+  .vp-doc .ocw-transcript__list li > button {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 8px;
+    padding: 5px 10px;
+    font-size: 12.5px;
+  }
+
+  .ocw-transcript__panel {
+    max-height: 300px;
+  }
+}
+
+/* 逐句字幕面板（非全屏） -------------------------------------------------- */
+
+.ocw-transcript {
+  margin-top: 12px;
+  overflow: hidden;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--cs-border);
+  border-radius: var(--cs-radius-md);
+}
+
+.ocw-transcript__toggle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--vp-c-text-1);
+  text-align: left;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.ocw-transcript__toggle:hover {
+  background: var(--vp-c-brand-soft);
+}
+
+.ocw-transcript__caret {
+  font-size: 10px;
+  color: var(--vp-c-text-3);
+}
+
+.ocw-transcript__label {
+  font-weight: 650;
+}
+
+.ocw-transcript__meta {
+  font-size: 11.5px;
+  color: var(--vp-c-text-3);
+}
+
+.ocw-transcript__action {
+  margin-left: auto;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+}
+
+.ocw-transcript__panel {
+  max-height: 340px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--vp-c-bg);
+  border-top: 1px solid var(--cs-border);
+  scrollbar-width: thin;
+}
+
+.ocw-transcript__bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 12px;
+  background: var(--vp-c-bg-soft);
+  border-bottom: 1px solid var(--cs-border);
+}
+
+.ocw-transcript__hint {
+  font-size: 11.5px;
+  color: var(--vp-c-text-3);
+}
+
+.vp-doc .ocw-transcript__list {
+  padding: 4px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.vp-doc .ocw-transcript__list li {
+  margin: 0;
+}
+
+.vp-doc .ocw-transcript__list li + li {
+  margin-top: 0;
+}
+
+.vp-doc .ocw-transcript__list li > button {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 12px;
+  width: 100%;
+  padding: 5px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.vp-doc .ocw-transcript__list li:hover > button {
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc .ocw-transcript__list li.is-active > button {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-brand-soft);
+  border-left-color: var(--vp-c-brand-2);
+}
+
+.ocw-transcript__time {
+  padding-top: 2px;
+  font-family: var(--cs-mono);
+  font-size: 11.5px;
+  color: var(--vp-c-text-3);
+}
+
+.vp-doc .ocw-transcript__list li.is-active .ocw-transcript__time {
+  color: var(--vp-c-brand-1);
+}
+
+.ocw-transcript__text {
+  min-width: 0;
+}

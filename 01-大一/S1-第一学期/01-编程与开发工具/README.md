@@ -14,6 +14,7 @@ Python*, 3rd Edition, MIT Press, 2021.\
 
 MIT Introduction to Computer Science and Programming in Python。\
 课程入口：https://introcomp.mit.edu/\
+本地镜像（视频 + 讲义 + 代码 + 习题，可直接播放/下载）：[MIT 6.100L 公开课镜像](/公开课/MIT-6.100L/)\
 说明：课程版本和作业要求可能更新，开始学习时核对当前页面。
 
 ## 学习范围

@@ -29,8 +29,9 @@ CS-AI-Learning/
 ├─ 02-大二/ ~ 04-大四/     学年规划（逐年细化）
 ├─ 知识专题/               跨课程知识单元
 ├─ 交互实验/               交互式学习页面
-├─ public/                 静态资源（logo、favicon、独立 SVG 图）
-├─ scripts/                链接检查等维护脚本
+├─ 公开课/                 MIT OCW 课程镜像（脚本生成，勿手改）
+├─ public/                 静态资源（logo、favicon、独立 SVG 图、ocw/ 镜像素材）
+├─ scripts/                链接检查、OCW 抓取等维护脚本
 ├─ .github/workflows/       GitHub Pages 自动部署工作流
 ├─ .vitepress/
 │  ├─ config.mts           站点配置、导航、搜索、插件
@@ -131,6 +132,7 @@ npm run dev          # 本地开发，默认 http://localhost:5173/
 npm run build        # 构建静态站点到 dist/
 npm run preview      # 预览构建产物
 npm run check:links  # 检查 dist/ 中的内部链接与锚点
+npm run ocw:add -- <MIT OCW 课程链接>   # 新增/更新一门公开课镜像
 ```
 
 提交前至少完成：
@@ -160,3 +162,29 @@ npm run check:links  # 检查 dist/ 中的内部链接与锚点
 - 中文路径与文件名已完整支持；URL 会由浏览器自动编码。
 - 默认 `cleanUrls: false`，生成的链接带 `.html`，可被任意静态服务器直接访问。
 - 部署到子路径（如 NAS 的 `/cs-ai-learning/`）时，用 `DOCS_BASE=/cs-ai-learning/ npm run build`，或在 `config.mts` 中设置 `base`，并重新构建。
+
+## 11. 公开课镜像（MIT OCW）
+
+`公开课/` 下的页面由 `scripts/ocw/add-course.mjs` 生成，**不要手改**；需要更新时重跑脚本。
+
+```bash
+npm run ocw:add -- https://ocw.mit.edu/courses/<slug>/   # 首次抓取（下载官方打包 zip）
+npm run ocw:add -- <slug> --from-manifest                # 用已下载清单重建 Markdown，不联网
+npm run ocw:add -- <slug> --force                        # 重新下载并清理多余文件
+```
+
+- 产出：`公开课/<课程目录>/README.md`（课程主页）、`lecture-NN.md`（讲次页）与 `公开课/README.md`（索引）；
+  资源文件落在 `public/ocw/<short-id>/`，清单在 `scripts/ocw/data/<short-id>.json`。
+- 视频不落地：由 `OcwVideo` 组件嵌入官方 YouTube（点击后才加载 iframe），同时保留原站 MP4 与原始页面链接。
+  组件提供三种站内增强：**网页全屏**（铺满浏览器视口，Esc 或点黑边退出）、**悬浮字幕**
+  （读本地 `lecNN-captions.vtt`，经 YouTube IFrame API 取播放时码同步，并自动关闭 YouTube 内置字幕避免叠加）、
+  **逐句字幕面板**（默认折叠，展开后当前句高亮并自动滚到面板中央，点任一句可跳转播放）。
+  字幕文件随课程包一起下载，脚本会把 `<OcwVideo captions="…">` 自动写进讲次页。
+- 许可证：MIT OCW 内容为 CC BY-NC-SA 4.0。每门课页面底部自动生成署名与许可，**不要删除**；
+  本站只能用于非商业个人学习，转载需保留署名并以相同方式共享。
+- 导航、侧边栏与搜索由 `.vitepress/data/content.ts` 自动发现 `公开课/*/README.md`；frontmatter 的
+  `order` 控制索引顺序，`title` 同时用于侧边栏。
+- `.py`、`.ipynb` 等源码扩展名不在 VitePress 的资源白名单内，`config.mts` 通过
+  `VITE_EXTRA_EXTENSIONS` 扩展；`/ocw/` 前缀的链接由 `npm run check:links` 在构建产物中逐个校验。
+  这两处配置不要删除，否则构建会误报死链或给源码链接补上 `.html`。
+- 单个课程包通常 50–100 MB。仓库只提交文字与资源文件，`.tmp/ocw/` 里的原始 zip 已在 `.gitignore` 中忽略。

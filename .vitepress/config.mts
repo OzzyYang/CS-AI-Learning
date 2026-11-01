@@ -7,6 +7,13 @@ import { staticLinks } from './plugins/links'
 const content = buildContent()
 
 /**
+ * VitePress 内置一份「静态资源扩展名」白名单，命中才会原样输出链接，
+ * 否则会被当成页面链接补上 .html。公开课镜像包含 .py / .ipynb 等源码文件，
+ * 这里通过官方 Environment Variable 扩展白名单。
+ */
+process.env.VITE_EXTRA_EXTENSIONS ||= 'py,ipynb,c,cpp,h,hpp,java,jsx,tsx,m,r,pl,sh,rs,go,gitignore'
+
+/**
  * 支持子路径部署，例如：
  * PowerShell: $env:DOCS_BASE='/cs-ai-learning/'; npm run build
  */
@@ -123,6 +130,32 @@ const sidebar: Record<string, any> = {
         ...content.topics.map((topic) => ({ text: topic.title, link: topic.href }))
       ]
     }
+  ],
+  '/公开课/': [
+    {
+      text: '公开课镜像',
+      items: [
+        { text: '镜像索引', link: '/公开课/' },
+        ...content.ocw.map((course) => ({ text: course.title, link: course.route }))
+      ]
+    }
+  ]
+}
+
+for (const course of content.ocw) {
+  sidebar[course.route] = [
+    {
+      text: '课程导航',
+      items: [
+        { text: '课程主页', link: course.route },
+        { text: '公开课索引', link: '/公开课/' }
+      ]
+    },
+    {
+      text: `讲次 · ${course.lectureCount}`,
+      collapsed: false,
+      items: course.lectures.map((lecture) => ({ text: lecture.label, link: lecture.link }))
+    }
   ]
 }
 
@@ -141,6 +174,11 @@ export default defineConfig({
   outDir: 'dist',
   cacheDir: '.vitepress/cache',
   srcExclude: ['README.md', 'AGENTS.md', 'scripts/**'],
+  /**
+   * 公开课镜像里的 .py / .zip 等原始素材不是站点路由，VitePress 的路由级死链检查无法识别。
+   * 这些链接由 `npm run check:links` 在构建产物中逐个校验真实文件是否存在，覆盖更完整。
+   */
+  ignoreDeadLinks: [/^\/ocw\//],
   rewrites: (id) => (id.endsWith('/README.md') ? id.replace(/README\.md$/, 'index.md') : id),
   markdown: {
     image: { lazyLoading: true },
@@ -192,6 +230,7 @@ export default defineConfig({
           link: year.route
         }))
       },
+      { text: '公开课', link: '/公开课/' },
       { text: '知识专题', link: '/知识专题/' },
       { text: '交互实验', link: '/交互实验/' }
     ],

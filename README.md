@@ -30,6 +30,7 @@ CS + AI 知识体系。
 - `02-大二/`：系统与传统 AI 的规划框架。
 - `03-大三/`：机器学习与深度学习的规划框架。
 - `04-大四/`：大模型、智能体与 AI 工程的规划框架。
+- `公开课/`：MIT OpenCourseWare 课程镜像（视频、讲义、代码、习题已落地到本站）。
 
 ## 使用方法
 
@@ -50,10 +51,23 @@ CS + AI 知识体系。
 - 首页：`index.md`
 - 知识专题：`知识专题/`
 - 交互实验：`交互实验/`
+- 公开课镜像：`公开课/`（原始素材在 `public/ocw/<课程 short-id>/`）
 - 站点配置：`.vitepress/config.mts`
 - 内容扫描与关联数据：`.vitepress/data/content.ts`
 - 统一主题与组件：`.vitepress/theme/`
 - 构建产物：`dist/`（已在 `.gitignore` 中忽略，不提交）
+
+### 公开课镜像
+
+MIT OCW 的官方课程包（讲义 PDF、课堂代码、习题与解答、字幕稿）已下载到 `public/ocw/`，
+视频通过官方 YouTube 频道嵌入播放。新增一门课程：
+
+```bash
+npm run ocw:add -- https://ocw.mit.edu/courses/<课程 slug>/
+```
+
+脚本会读取课程元数据、下载官方打包 zip、落地资源文件，并生成课程主页与逐讲页面。
+课程内容按 CC BY-NC-SA 4.0 在非商业范围内镜像，页面底部自动附带署名与许可。
 
 ### 在线站点
 
@@ -71,6 +85,7 @@ npm run dev        # 本地开发，默认 http://localhost:5173/
 npm run build      # 构建静态站点到 dist/
 npm run preview    # 预览构建产物
 npm run check:links
+npm run ocw:add -- <MIT OCW 课程链接>   # 新增一门公开课镜像
 ```
 
 ### 内容维护
@@ -122,6 +137,7 @@ server {
 ### 当前验证状态
 
 - 原有 19 个 Markdown 学习文件全部保留，课程目录与培养方案未重组。
-- `npm run build` 构建成功，产物为 33 个 HTML 页面（含 404 页）。
-- `npm run check:links` 检查 1,292 个内部链接与资源，无死链。
+- `npm run build` 构建成功，产物为 61 个 HTML 页面（含 404 页）。
+- `npm run check:links` 检查 3,032 个内部链接与资源，无死链。
 - 已用普通静态服务器、无头 Chrome 验证首页、课程页、专题页、实验页、KaTeX、Mermaid 与中文本地搜索。
+- 公开课镜像：MIT 6.100L 26 讲视频 + 126 个资源文件（60.2 MB）已落地，课程页与 26 个讲次页可离线访问。

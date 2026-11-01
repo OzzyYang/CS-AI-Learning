@@ -79,6 +79,23 @@ export interface LabEntry {
   topics: RelatedItem[]
 }
 
+export interface OcwLectureEntry {
+  label: string
+  link: string
+}
+
+export interface OcwEntry {
+  title: string
+  dir: string
+  route: string
+  href: string
+  order: number
+  description: string
+  source: string
+  lectureCount: number
+  lectures: OcwLectureEntry[]
+}
+
 export interface RecentEntry {
   title: string
   route: string
@@ -105,6 +122,7 @@ export interface CurriculumData {
   totals: Totals
   topics: TopicEntry[]
   labs: LabEntry[]
+  ocw: OcwEntry[]
   recent: RecentEntry[]
   related: Record<string, RelatedGroups>
 }

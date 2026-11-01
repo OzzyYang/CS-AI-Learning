@@ -1,0 +1,2769 @@
+{
+  "slug": "6-100l-introduction-to-cs-and-programming-using-python-fall-2022",
+  "shortId": "6.100l-fall-2022",
+  "dir": "MIT-6.100L",
+  "order": 1,
+  "sourceUrl": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+  "assetBase": "/ocw/6.100l-fall-2022/",
+  "meta": {
+    "title": "Introduction to CS and Programming using Python",
+    "number": "6.100L",
+    "term": "Fall",
+    "year": "2022",
+    "instructors": [
+      "Dr. Ana Bell"
+    ],
+    "level": [
+      "Undergraduate"
+    ],
+    "resourceTypes": [
+      "Lecture Videos",
+      "Lecture Notes",
+      "Problem Sets",
+      "Programming Assignments with Examples",
+      "Readings",
+      "Problem-solving Notes",
+      "Podcasts"
+    ],
+    "description": "This subject is aimed at students with little to no programming experience. It aims to provide students with an understanding of the role computation can play in solving problems. It also aims to help students, regardless of their major, feel justifiably confident in their ability to write simple programs that allow them to accomplish useful goals. The class will use the Python 3 programming language.",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "topics": [
+      "Engineering / Computer Science / Programming Languages"
+    ]
+  },
+  "files": [
+    {
+      "name": "lec01-captions.vtt",
+      "size": 125761,
+      "source": "1LrNFzx4f4UlMXOcxUUcqK2lCzQpaS-Bc_transcript.webvtt"
+    },
+    {
+      "name": "lec01-transcript.pdf",
+      "size": 89014,
+      "source": "1LrNFzx4f4UlMXOcxUUcqK2lCzQpaS-Bc_transcript.pdf"
+    },
+    {
+      "name": "lec02-captions.vtt",
+      "size": 160305,
+      "source": "6100l-lecture-2-multi-version-4_1_captions.vtt"
+    },
+    {
+      "name": "lec02-transcript.pdf",
+      "size": 104680,
+      "source": "6100l-lecture-2-multi-version-4_1_transcript.pdf"
+    },
+    {
+      "name": "lec03-captions.vtt",
+      "size": 92732,
+      "source": "1jn58uDUTgM2Zg1YYoxK9CkiG-rAH9Fmh_transcript.webvtt"
+    },
+    {
+      "name": "lec03-transcript.pdf",
+      "size": 70566,
+      "source": "1jn58uDUTgM2Zg1YYoxK9CkiG-rAH9Fmh_transcript.pdf"
+    },
+    {
+      "name": "lec04-captions.vtt",
+      "size": 144024,
+      "source": "1SVVezlb4h8tA4fKRJ41pWjsyaqdGdXvs_transcript.webvtt"
+    },
+    {
+      "name": "lec04-transcript.pdf",
+      "size": 98365,
+      "source": "1SVVezlb4h8tA4fKRJ41pWjsyaqdGdXvs_transcript.pdf"
+    },
+    {
+      "name": "lec05-captions.vtt",
+      "size": 86406,
+      "source": "1sdzlNzf_U9Dl1VICMcDzaSFH3WDS2W3x_transcript.webvtt"
+    },
+    {
+      "name": "lec05-transcript.pdf",
+      "size": 67099,
+      "source": "1sdzlNzf_U9Dl1VICMcDzaSFH3WDS2W3x_transcript.pdf"
+    },
+    {
+      "name": "lec06-captions.vtt",
+      "size": 137671,
+      "source": "1ZzX65dND58Lig0K6fcjTbpA5FiKIhAcx_transcript.webvtt"
+    },
+    {
+      "name": "lec06-transcript.pdf",
+      "size": 94559,
+      "source": "1ZzX65dND58Lig0K6fcjTbpA5FiKIhAcx_transcript.pdf"
+    },
+    {
+      "name": "lec07-captions.vtt",
+      "size": 92568,
+      "source": "1NWsD4yStlMPsvHXGgvg0oT1zF13vXErk_transcript.webvtt"
+    },
+    {
+      "name": "lec07-transcript.pdf",
+      "size": 70224,
+      "source": "1NWsD4yStlMPsvHXGgvg0oT1zF13vXErk_transcript.pdf"
+    },
+    {
+      "name": "lec08-captions.vtt",
+      "size": 147497,
+      "source": "1fkfiNALPDISPZW42aeW-nV_AJwXJ6fWN_transcript.webvtt"
+    },
+    {
+      "name": "lec08-transcript.pdf",
+      "size": 99274,
+      "source": "1fkfiNALPDISPZW42aeW-nV_AJwXJ6fWN_transcript.pdf"
+    },
+    {
+      "name": "lec09-captions.vtt",
+      "size": 84776,
+      "source": "1lMet5GPIW1ZhnesX_FN2udiX7bcr0mJd_transcript.webvtt"
+    },
+    {
+      "name": "lec09-transcript.pdf",
+      "size": 67884,
+      "source": "1lMet5GPIW1ZhnesX_FN2udiX7bcr0mJd_transcript.pdf"
+    },
+    {
+      "name": "lec10-captions.vtt",
+      "size": 142700,
+      "source": "1thJR8x0QK8HpwQ3OqOE-MVtYg_P0QZ_T_transcript.webvtt"
+    },
+    {
+      "name": "lec10-transcript.pdf",
+      "size": 96884,
+      "source": "1thJR8x0QK8HpwQ3OqOE-MVtYg_P0QZ_T_transcript.pdf"
+    },
+    {
+      "name": "lec11-captions.vtt",
+      "size": 89150,
+      "source": "1We_TL7FBrn8k8Fh5XnBgrQuG6qDsI4is_transcript.webvtt"
+    },
+    {
+      "name": "lec11-transcript.pdf",
+      "size": 68479,
+      "source": "1We_TL7FBrn8k8Fh5XnBgrQuG6qDsI4is_transcript.pdf"
+    },
+    {
+      "name": "lec12-captions.vtt",
+      "size": 147225,
+      "source": "1yicNRax_Y6uXUq1RhogtauUcSorMMd66_transcript.webvtt"
+    },
+    {
+      "name": "lec12-transcript.pdf",
+      "size": 99768,
+      "source": "1yicNRax_Y6uXUq1RhogtauUcSorMMd66_transcript.pdf"
+    },
+    {
+      "name": "lec13-captions.vtt",
+      "size": 85190,
+      "source": "1tniTNqJJXR2M7JRpXHVinHY3MoCnxgyp_transcript.webvtt"
+    },
+    {
+      "name": "lec13-transcript.pdf",
+      "size": 66286,
+      "source": "1tniTNqJJXR2M7JRpXHVinHY3MoCnxgyp_transcript.pdf"
+    },
+    {
+      "name": "lec14-captions.vtt",
+      "size": 150376,
+      "source": "1U0kBprsi-v9QhXIZdGgvCZd92936dmcz_transcript.webvtt"
+    },
+    {
+      "name": "lec14-transcript.pdf",
+      "size": 101209,
+      "source": "1U0kBprsi-v9QhXIZdGgvCZd92936dmcz_transcript.pdf"
+    },
+    {
+      "name": "lec15-captions.vtt",
+      "size": 88644,
+      "source": "1uFTx7VBCy0zz2tZxzgf-VjE9TAsYp_0k_transcript.webvtt"
+    },
+    {
+      "name": "lec15-transcript.pdf",
+      "size": 67420,
+      "source": "1uFTx7VBCy0zz2tZxzgf-VjE9TAsYp_0k_transcript.pdf"
+    },
+    {
+      "name": "lec16-captions.vtt",
+      "size": 152220,
+      "source": "1hkR9BnkJ6tULeV8uM23dCK3mIdAL-omX_transcript.webvtt"
+    },
+    {
+      "name": "lec16-transcript.pdf",
+      "size": 98789,
+      "source": "1hkR9BnkJ6tULeV8uM23dCK3mIdAL-omX_transcript.pdf"
+    },
+    {
+      "name": "lec17-captions.vtt",
+      "size": 98097,
+      "source": "1jlgqPffb0jTD1GJmYxnukqh0qw6RY0Wv_transcript.webvtt"
+    },
+    {
+      "name": "lec17-transcript.pdf",
+      "size": 72102,
+      "source": "1jlgqPffb0jTD1GJmYxnukqh0qw6RY0Wv_transcript.pdf"
+    },
+    {
+      "name": "lec18-captions.vtt",
+      "size": 148452,
+      "source": "1H2sYXjAUBaCmU_W-8a9MZk-H-jYu14Za_transcript.webvtt"
+    },
+    {
+      "name": "lec18-transcript.pdf",
+      "size": 100823,
+      "source": "1H2sYXjAUBaCmU_W-8a9MZk-H-jYu14Za_transcript.pdf"
+    },
+    {
+      "name": "lec19-captions.vtt",
+      "size": 147188,
+      "source": "1jicSeVbkfCJ6PQAOsX0o52Z998OZwDoD_transcript.webvtt"
+    },
+    {
+      "name": "lec19-transcript.pdf",
+      "size": 98550,
+      "source": "1jicSeVbkfCJ6PQAOsX0o52Z998OZwDoD_transcript.pdf"
+    },
+    {
+      "name": "lec20-captions.vtt",
+      "size": 150497,
+      "source": "1l8mjRn1hi9LyjpsOLlLbZwxdsseNS_va_transcript.webvtt"
+    },
+    {
+      "name": "lec20-transcript.pdf",
+      "size": 102522,
+      "source": "1l8mjRn1hi9LyjpsOLlLbZwxdsseNS_va_transcript.pdf"
+    },
+    {
+      "name": "lec21-captions.vtt",
+      "size": 63849,
+      "source": "1xvoC1C2Y-utkqO-wB9gc4lhFPNpM5Zjj_transcript.webvtt"
+    },
+    {
+      "name": "lec21-transcript.pdf",
+      "size": 54306,
+      "source": "1xvoC1C2Y-utkqO-wB9gc4lhFPNpM5Zjj_transcript.pdf"
+    },
+    {
+      "name": "lec22-captions.vtt",
+      "size": 156758,
+      "source": "1A8qBYXfGlxrh1AzmvG-kNRw4M5bppdQ-_transcript.webvtt"
+    },
+    {
+      "name": "lec22-transcript.pdf",
+      "size": 104620,
+      "source": "1A8qBYXfGlxrh1AzmvG-kNRw4M5bppdQ-_transcript.pdf"
+    },
+    {
+      "name": "lec23-captions.vtt",
+      "size": 158212,
+      "source": "1xR3e2ychp7hYL-4PwrUUucM6a_hYVwvo_transcript.webvtt"
+    },
+    {
+      "name": "lec23-transcript.pdf",
+      "size": 103629,
+      "source": "1xR3e2ychp7hYL-4PwrUUucM6a_hYVwvo_transcript.pdf"
+    },
+    {
+      "name": "lec24-captions.vtt",
+      "size": 93552,
+      "source": "1VUHQTtGcGveZjWvzAwGFp2hH-QuimE7-_transcript.webvtt"
+    },
+    {
+      "name": "lec24-transcript.pdf",
+      "size": 69234,
+      "source": "1VUHQTtGcGveZjWvzAwGFp2hH-QuimE7-_transcript.pdf"
+    },
+    {
+      "name": "lec25-captions.vtt",
+      "size": 146040,
+      "source": "1cvnthuuvW853odAxpelaAUZkddb8M-tf_transcript.webvtt"
+    },
+    {
+      "name": "lec25-transcript.pdf",
+      "size": 98587,
+      "source": "1cvnthuuvW853odAxpelaAUZkddb8M-tf_transcript.pdf"
+    },
+    {
+      "name": "lec26-captions.vtt",
+      "size": 139927,
+      "source": "1Jf1_GNVjvRScJqmNBDRrxyK6igxPavZg_transcript.webvtt"
+    },
+    {
+      "name": "lec26-transcript.pdf",
+      "size": 97116,
+      "source": "1Jf1_GNVjvRScJqmNBDRrxyK6igxPavZg_transcript.pdf"
+    },
+    {
+      "name": "mit6_100l_f22_lec01_code.py",
+      "size": 2086,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec01.pdf",
+      "size": 852103,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec02_code.py",
+      "size": 7655,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec02.pdf",
+      "size": 1187780,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec03_code.py",
+      "size": 6110,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec03.pdf",
+      "size": 761689,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec04_code.py",
+      "size": 10298,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec04.pdf",
+      "size": 1153138,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec05_code.py",
+      "size": 4227,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec05.pdf",
+      "size": 909738,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec06_code.py",
+      "size": 4622,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec06.pdf",
+      "size": 810645,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec07_code.py",
+      "size": 6041,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec07.pdf",
+      "size": 711563,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec08_code.py",
+      "size": 8756,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec08.pdf",
+      "size": 1273757,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec09_code.py",
+      "size": 6704,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec09.pdf",
+      "size": 864295,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec10_code.py",
+      "size": 7654,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec10.pdf",
+      "size": 1460485,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec11_code.py",
+      "size": 6993,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec11.pdf",
+      "size": 1202305,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec12_code.zip",
+      "size": 5344,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec12.pdf",
+      "size": 915157,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec13_code.py",
+      "size": 8018,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec13.pdf",
+      "size": 695971,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec14_code.py",
+      "size": 21904,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec14.pdf",
+      "size": 1077547,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec15_code.py",
+      "size": 4403,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec15.pdf",
+      "size": 984564,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec16_code.py",
+      "size": 12513,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec16.pdf",
+      "size": 1674226,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec17_code.py",
+      "size": 4927,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec17.pdf",
+      "size": 1260008,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec18_code.py",
+      "size": 14461,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec18.pdf",
+      "size": 1332804,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec19_code.py",
+      "size": 16448,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec19.pdf",
+      "size": 2423728,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec20_code.zip",
+      "size": 5711,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec20.pdf",
+      "size": 1961837,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec21_code.py",
+      "size": 2319,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec21.pdf",
+      "size": 634407,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec22_code.py",
+      "size": 9233,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec22.pdf",
+      "size": 2375459,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec23_code.py",
+      "size": 6266,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec23.pdf",
+      "size": 2346758,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec24_code.py",
+      "size": 3339,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec24.pdf",
+      "size": 7213540,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec25_code.zip",
+      "size": 1710080,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec25.pdf",
+      "size": 5152292,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec26_code.py",
+      "size": 3466,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_lec26.pdf",
+      "size": 1317110,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps0_code.zip",
+      "size": 6038120,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps0.pdf",
+      "size": 305328,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps1_code.zip",
+      "size": 5293,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps1.pdf",
+      "size": 387775,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps2_code.zip",
+      "size": 190816,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps2.pdf",
+      "size": 478662,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps3_code.zip",
+      "size": 17205,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps3.pdf",
+      "size": 619033,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps4_code.zip",
+      "size": 210130,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps4.pdf",
+      "size": 585660,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps5_code.zip",
+      "size": 2560023,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_ps5.pdf",
+      "size": 490898,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec01.pdf",
+      "size": 141646,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec02.zip",
+      "size": 19391,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec03.zip",
+      "size": 145972,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec04.zip",
+      "size": 23181,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec05.zip",
+      "size": 19200,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec06.zip",
+      "size": 23801,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec07.zip",
+      "size": 154813,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec08.zip",
+      "size": 90315,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec09.zip",
+      "size": 428909,
+      "source": ""
+    },
+    {
+      "name": "mit6_100l_f22_rec10.zip",
+      "size": 212279,
+      "source": ""
+    }
+  ],
+  "lectures": [
+    {
+      "number": 1,
+      "title": "Lecture 1: Introduction",
+      "topic": "Introduction",
+      "pageSlug": "lecture-1-introduction",
+      "video": {
+        "number": 1,
+        "title": "Lecture 1: Introduction to CS and Programming Using Python",
+        "youtubeId": "xAcTmDO6NTI",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-1-version-2_360p_16_9.mp4",
+        "size": 98848218,
+        "transcript": "lec01-transcript.pdf",
+        "captions": "lec01-captions.vtt",
+        "transcriptSource": "1LrNFzx4f4UlMXOcxUUcqK2lCzQpaS-Bc_transcript.pdf",
+        "captionsSource": "1LrNFzx4f4UlMXOcxUUcqK2lCzQpaS-Bc_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 1: Introduction",
+          "name": "mit6_100l_f22_lec01.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec01.pdf",
+          "size": 852103,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 1 Code",
+          "name": "mit6_100l_f22_lec01_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec01_code.py",
+          "size": 2086,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec01-transcript.pdf",
+          "source": "1LrNFzx4f4UlMXOcxUUcqK2lCzQpaS-Bc_transcript.pdf",
+          "size": 89014,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec01-captions.vtt",
+          "source": "1LrNFzx4f4UlMXOcxUUcqK2lCzQpaS-Bc_transcript.webvtt",
+          "size": 125761,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Lecture 2: Strings, Input/Output, Branching",
+      "topic": "Strings, Input/Output, Branching",
+      "pageSlug": "lecture-2-strings-inputoutput-branching",
+      "video": {
+        "number": 2,
+        "title": "Lecture 2: Strings, Input/Output, and Branching",
+        "youtubeId": "UdEX0E9lIQM",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-2-multi-version-4_1_360p_16_9.mp4",
+        "size": 143650441,
+        "transcript": "lec02-transcript.pdf",
+        "captions": "lec02-captions.vtt",
+        "transcriptSource": "6100l-lecture-2-multi-version-4_1_transcript.pdf",
+        "captionsSource": "6100l-lecture-2-multi-version-4_1_captions.vtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 2: Strings, Input/Output, and Branching",
+          "name": "mit6_100l_f22_lec02.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec02.pdf",
+          "size": 1187780,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 2 Code",
+          "name": "mit6_100l_f22_lec02_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec02_code.py",
+          "size": 7655,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec02-transcript.pdf",
+          "source": "6100l-lecture-2-multi-version-4_1_transcript.pdf",
+          "size": 104680,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec02-captions.vtt",
+          "source": "6100l-lecture-2-multi-version-4_1_captions.vtt",
+          "size": 160305,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Lecture 3: Iteration",
+      "topic": "Iteration",
+      "pageSlug": "lecture-3-iteration",
+      "video": {
+        "number": 3,
+        "title": "Lecture 3: Iteration",
+        "youtubeId": "lzYrMcI92kw",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-3-multi_360p_16_9.mp4",
+        "size": 74221676,
+        "transcript": "lec03-transcript.pdf",
+        "captions": "lec03-captions.vtt",
+        "transcriptSource": "1jn58uDUTgM2Zg1YYoxK9CkiG-rAH9Fmh_transcript.pdf",
+        "captionsSource": "1jn58uDUTgM2Zg1YYoxK9CkiG-rAH9Fmh_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 3: Iteration",
+          "name": "mit6_100l_f22_lec03.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec03.pdf",
+          "size": 761689,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 3 Code",
+          "name": "mit6_100l_f22_lec03_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec03_code.py",
+          "size": 6110,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec03-transcript.pdf",
+          "source": "1jn58uDUTgM2Zg1YYoxK9CkiG-rAH9Fmh_transcript.pdf",
+          "size": 70566,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec03-captions.vtt",
+          "source": "1jn58uDUTgM2Zg1YYoxK9CkiG-rAH9Fmh_transcript.webvtt",
+          "size": 92732,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Lecture 4: Loops over Strings, Guess-and-Check, Binary",
+      "topic": "Loops over Strings, Guess-and-Check, Binary",
+      "pageSlug": "lecture-4-loops-over-strings-guess-and-check-binary",
+      "video": {
+        "number": 4,
+        "title": "Lecture 4: Loops over Strings, Guess-and-Check, and Binary",
+        "youtubeId": "fWNZAw5Bmco",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-4-multi_360p_16_9.mp4",
+        "size": 136866992,
+        "transcript": "lec04-transcript.pdf",
+        "captions": "lec04-captions.vtt",
+        "transcriptSource": "1SVVezlb4h8tA4fKRJ41pWjsyaqdGdXvs_transcript.pdf",
+        "captionsSource": "1SVVezlb4h8tA4fKRJ41pWjsyaqdGdXvs_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 4: Loops over Strings, Guess-and-Check, Binary",
+          "name": "mit6_100l_f22_lec04.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec04.pdf",
+          "size": 1153138,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 4 Code",
+          "name": "mit6_100l_f22_lec04_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec04_code.py",
+          "size": 10298,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec04-transcript.pdf",
+          "source": "1SVVezlb4h8tA4fKRJ41pWjsyaqdGdXvs_transcript.pdf",
+          "size": 98365,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec04-captions.vtt",
+          "source": "1SVVezlb4h8tA4fKRJ41pWjsyaqdGdXvs_transcript.webvtt",
+          "size": 144024,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Lecture 5: Floats and Approximation Methods",
+      "topic": "Floats and Approximation Methods",
+      "pageSlug": "lecture-5-floats-and-approximation-methods",
+      "video": {
+        "number": 5,
+        "title": "Lecture 5: Floats and Approximation Methods",
+        "youtubeId": "OF2sr5e7PrY",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-5-multi_360p_16_9.mp4",
+        "size": 78738256,
+        "transcript": "lec05-transcript.pdf",
+        "captions": "lec05-captions.vtt",
+        "transcriptSource": "1sdzlNzf_U9Dl1VICMcDzaSFH3WDS2W3x_transcript.pdf",
+        "captionsSource": "1sdzlNzf_U9Dl1VICMcDzaSFH3WDS2W3x_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 5: Floats and Approximation Methods",
+          "name": "mit6_100l_f22_lec05.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec05.pdf",
+          "size": 909738,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 5 Code",
+          "name": "mit6_100l_f22_lec05_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec05_code.py",
+          "size": 4227,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec05-transcript.pdf",
+          "source": "1sdzlNzf_U9Dl1VICMcDzaSFH3WDS2W3x_transcript.pdf",
+          "size": 67099,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec05-captions.vtt",
+          "source": "1sdzlNzf_U9Dl1VICMcDzaSFH3WDS2W3x_transcript.webvtt",
+          "size": 86406,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Lecture 6: Bisection Search",
+      "topic": "Bisection Search",
+      "pageSlug": "lecture-6-bisection-search",
+      "video": {
+        "number": 6,
+        "title": "Lecture 6: Bisection Search",
+        "youtubeId": "PJ_5VNvJGtA",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-6-multi-version-3_360p_16_9.mp4",
+        "size": 138327969,
+        "transcript": "lec06-transcript.pdf",
+        "captions": "lec06-captions.vtt",
+        "transcriptSource": "1ZzX65dND58Lig0K6fcjTbpA5FiKIhAcx_transcript.pdf",
+        "captionsSource": "1ZzX65dND58Lig0K6fcjTbpA5FiKIhAcx_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 6: Bisection Search",
+          "name": "mit6_100l_f22_lec06.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec06.pdf",
+          "size": 810645,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 6 Code",
+          "name": "mit6_100l_f22_lec06_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec06_code.py",
+          "size": 4622,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec06-transcript.pdf",
+          "source": "1ZzX65dND58Lig0K6fcjTbpA5FiKIhAcx_transcript.pdf",
+          "size": 94559,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec06-captions.vtt",
+          "source": "1ZzX65dND58Lig0K6fcjTbpA5FiKIhAcx_transcript.webvtt",
+          "size": 137671,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Lecture 7: Decomposition, Abstraction, Functions",
+      "topic": "Decomposition, Abstraction, Functions",
+      "pageSlug": "lecture-7-decomposition-abstraction-functions",
+      "video": {
+        "number": 7,
+        "title": "Lecture 7: Decomposition, Abstraction, and Functions",
+        "youtubeId": "Qf6OVR8MLnU",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-7-multi_360p_16_9.mp4",
+        "size": 73171448,
+        "transcript": "lec07-transcript.pdf",
+        "captions": "lec07-captions.vtt",
+        "transcriptSource": "1NWsD4yStlMPsvHXGgvg0oT1zF13vXErk_transcript.pdf",
+        "captionsSource": "1NWsD4yStlMPsvHXGgvg0oT1zF13vXErk_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 7: Decomposition, Abstraction, Functions",
+          "name": "mit6_100l_f22_lec07.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec07.pdf",
+          "size": 711563,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 7 Code",
+          "name": "mit6_100l_f22_lec07_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec07_code.py",
+          "size": 6041,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec07-transcript.pdf",
+          "source": "1NWsD4yStlMPsvHXGgvg0oT1zF13vXErk_transcript.pdf",
+          "size": 70224,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec07-captions.vtt",
+          "source": "1NWsD4yStlMPsvHXGgvg0oT1zF13vXErk_transcript.webvtt",
+          "size": 92568,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Lecture 8: Functions as Objects",
+      "topic": "Functions as Objects",
+      "pageSlug": "lecture-8-functions-as-objects",
+      "video": {
+        "number": 8,
+        "title": "Lecture 8: Functions as Objects",
+        "youtubeId": "0fEJFRKJN4U",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-8-version-2_360p_16_9.mp4",
+        "size": 132528943,
+        "transcript": "lec08-transcript.pdf",
+        "captions": "lec08-captions.vtt",
+        "transcriptSource": "1fkfiNALPDISPZW42aeW-nV_AJwXJ6fWN_transcript.pdf",
+        "captionsSource": "1fkfiNALPDISPZW42aeW-nV_AJwXJ6fWN_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 8: Functions as Objects",
+          "name": "mit6_100l_f22_lec08.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec08.pdf",
+          "size": 1273757,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 8 Code",
+          "name": "mit6_100l_f22_lec08_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec08_code.py",
+          "size": 8756,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec08-transcript.pdf",
+          "source": "1fkfiNALPDISPZW42aeW-nV_AJwXJ6fWN_transcript.pdf",
+          "size": 99274,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec08-captions.vtt",
+          "source": "1fkfiNALPDISPZW42aeW-nV_AJwXJ6fWN_transcript.webvtt",
+          "size": 147497,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Lecture 9: Lambda Functions, Tuples, and Lists",
+      "topic": "Lambda Functions, Tuples, and Lists",
+      "pageSlug": "lecture-9-lambda-functions-tuples-and-lists",
+      "video": {
+        "number": 9,
+        "title": "Lecture 9: Lambda Functions, Tuples, and Lists",
+        "youtubeId": "h5abkZ_Ch6c",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-9-version-2_360p_16_9.mp4",
+        "size": 75436756,
+        "transcript": "lec09-transcript.pdf",
+        "captions": "lec09-captions.vtt",
+        "transcriptSource": "1lMet5GPIW1ZhnesX_FN2udiX7bcr0mJd_transcript.pdf",
+        "captionsSource": "1lMet5GPIW1ZhnesX_FN2udiX7bcr0mJd_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 9: Lambda Functions, Tuples, and Lists",
+          "name": "mit6_100l_f22_lec09.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec09.pdf",
+          "size": 864295,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 9 Code",
+          "name": "mit6_100l_f22_lec09_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec09_code.py",
+          "size": 6704,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec09-transcript.pdf",
+          "source": "1lMet5GPIW1ZhnesX_FN2udiX7bcr0mJd_transcript.pdf",
+          "size": 67884,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec09-captions.vtt",
+          "source": "1lMet5GPIW1ZhnesX_FN2udiX7bcr0mJd_transcript.webvtt",
+          "size": 84776,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Lecture 10: Lists, Mutability",
+      "topic": "Lists, Mutability",
+      "pageSlug": "lecture-10-lists-mutability",
+      "video": {
+        "number": 10,
+        "title": "Lecture 10: Lists and Mutability",
+        "youtubeId": "Z4bm7xzYpKM",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-10-version-3_1_360p_16_9.mp4",
+        "size": 113788561,
+        "transcript": "lec10-transcript.pdf",
+        "captions": "lec10-captions.vtt",
+        "transcriptSource": "1thJR8x0QK8HpwQ3OqOE-MVtYg_P0QZ_T_transcript.pdf",
+        "captionsSource": "1thJR8x0QK8HpwQ3OqOE-MVtYg_P0QZ_T_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 10: Lists, Mutability",
+          "name": "mit6_100l_f22_lec10.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec10.pdf",
+          "size": 1460485,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 10 Code",
+          "name": "mit6_100l_f22_lec10_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec10_code.py",
+          "size": 7654,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec10-transcript.pdf",
+          "source": "1thJR8x0QK8HpwQ3OqOE-MVtYg_P0QZ_T_transcript.pdf",
+          "size": 96884,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec10-captions.vtt",
+          "source": "1thJR8x0QK8HpwQ3OqOE-MVtYg_P0QZ_T_transcript.webvtt",
+          "size": 142700,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Lecture 11: Aliasing, Cloning",
+      "topic": "Aliasing, Cloning",
+      "pageSlug": "lecture-11-aliasing-cloning",
+      "video": {
+        "number": 11,
+        "title": "Lecture 11: Aliasing and Cloning",
+        "youtubeId": "hpsp-LQurco",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-11-version-2_360p_16_9.mp4",
+        "size": 71333365,
+        "transcript": "lec11-transcript.pdf",
+        "captions": "lec11-captions.vtt",
+        "transcriptSource": "1We_TL7FBrn8k8Fh5XnBgrQuG6qDsI4is_transcript.pdf",
+        "captionsSource": "1We_TL7FBrn8k8Fh5XnBgrQuG6qDsI4is_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 11: Aliasing, Cloning",
+          "name": "mit6_100l_f22_lec11.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec11.pdf",
+          "size": 1202305,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 11 Code",
+          "name": "mit6_100l_f22_lec11_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec11_code.py",
+          "size": 6993,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec11-transcript.pdf",
+          "source": "1We_TL7FBrn8k8Fh5XnBgrQuG6qDsI4is_transcript.pdf",
+          "size": 68479,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec11-captions.vtt",
+          "source": "1We_TL7FBrn8k8Fh5XnBgrQuG6qDsI4is_transcript.webvtt",
+          "size": 89150,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Lecture 12: List Comprehension, Functions as Objects, Testing, Debugging",
+      "topic": "List Comprehension, Functions as Objects, Testing, Debugging",
+      "pageSlug": "lecture-12-list-comprehension-functions-as-objects-testing-debugging",
+      "video": {
+        "number": 12,
+        "title": "Lecture 12: List Comprehension, Functions as Objects, Testing, and Debugging",
+        "youtubeId": "AZBxs3OvFrY",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-12-multi-version-4_360p_16_9.mp4",
+        "size": 131704846,
+        "transcript": "lec12-transcript.pdf",
+        "captions": "lec12-captions.vtt",
+        "transcriptSource": "1yicNRax_Y6uXUq1RhogtauUcSorMMd66_transcript.pdf",
+        "captionsSource": "1yicNRax_Y6uXUq1RhogtauUcSorMMd66_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 12: List Comprehension, Functions as Objects, Testing, Debugging",
+          "name": "mit6_100l_f22_lec12.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec12.pdf",
+          "size": 915157,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 12 Code",
+          "name": "mit6_100l_f22_lec12_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec12_code.zip",
+          "size": 5344,
+          "type": "zip",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec12-transcript.pdf",
+          "source": "1yicNRax_Y6uXUq1RhogtauUcSorMMd66_transcript.pdf",
+          "size": 99768,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec12-captions.vtt",
+          "source": "1yicNRax_Y6uXUq1RhogtauUcSorMMd66_transcript.webvtt",
+          "size": 147225,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Lecture 13: Exceptions, Assertions",
+      "topic": "Exceptions, Assertions",
+      "pageSlug": "lecture-13-exceptions-assertions",
+      "video": {
+        "number": 13,
+        "title": "Lecture 13: Exceptions and Assertions",
+        "youtubeId": "qT3_7FMuv-U",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-13-version-2_360p_16_9.mp4",
+        "size": 76853469,
+        "transcript": "lec13-transcript.pdf",
+        "captions": "lec13-captions.vtt",
+        "transcriptSource": "1tniTNqJJXR2M7JRpXHVinHY3MoCnxgyp_transcript.pdf",
+        "captionsSource": "1tniTNqJJXR2M7JRpXHVinHY3MoCnxgyp_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 13: Exceptions, Assertions",
+          "name": "mit6_100l_f22_lec13.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec13.pdf",
+          "size": 695971,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 13 Code",
+          "name": "mit6_100l_f22_lec13_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec13_code.py",
+          "size": 8018,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec13-transcript.pdf",
+          "source": "1tniTNqJJXR2M7JRpXHVinHY3MoCnxgyp_transcript.pdf",
+          "size": 66286,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec13-captions.vtt",
+          "source": "1tniTNqJJXR2M7JRpXHVinHY3MoCnxgyp_transcript.webvtt",
+          "size": 85190,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Lecture 14: Dictionaries",
+      "topic": "Dictionaries",
+      "pageSlug": "lecture-14-dictionaries",
+      "video": {
+        "number": 14,
+        "title": "Lecture 14: Dictionaries",
+        "youtubeId": "lTgLOuaQsvk",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-14-multi_360p_16_9.mp4",
+        "size": 126365892,
+        "transcript": "lec14-transcript.pdf",
+        "captions": "lec14-captions.vtt",
+        "transcriptSource": "1U0kBprsi-v9QhXIZdGgvCZd92936dmcz_transcript.pdf",
+        "captionsSource": "1U0kBprsi-v9QhXIZdGgvCZd92936dmcz_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 14: Dictionaries",
+          "name": "mit6_100l_f22_lec14.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec14.pdf",
+          "size": 1077547,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 14 Code",
+          "name": "mit6_100l_f22_lec14_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec14_code.py",
+          "size": 21904,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec14-transcript.pdf",
+          "source": "1U0kBprsi-v9QhXIZdGgvCZd92936dmcz_transcript.pdf",
+          "size": 101209,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec14-captions.vtt",
+          "source": "1U0kBprsi-v9QhXIZdGgvCZd92936dmcz_transcript.webvtt",
+          "size": 150376,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Lecture 15: Recursion",
+      "topic": "Recursion",
+      "pageSlug": "lecture-15-recursion",
+      "video": {
+        "number": 15,
+        "title": "Lecture 15: Recursion",
+        "youtubeId": "Bbyp4VRbmyY",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-15-version-2_360p_16_9.mp4",
+        "size": 77457829,
+        "transcript": "lec15-transcript.pdf",
+        "captions": "lec15-captions.vtt",
+        "transcriptSource": "1uFTx7VBCy0zz2tZxzgf-VjE9TAsYp_0k_transcript.pdf",
+        "captionsSource": "1uFTx7VBCy0zz2tZxzgf-VjE9TAsYp_0k_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 15: Recursion",
+          "name": "mit6_100l_f22_lec15.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec15.pdf",
+          "size": 984564,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 15 Code",
+          "name": "mit6_100l_f22_lec15_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec15_code.py",
+          "size": 4403,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec15-transcript.pdf",
+          "source": "1uFTx7VBCy0zz2tZxzgf-VjE9TAsYp_0k_transcript.pdf",
+          "size": 67420,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec15-captions.vtt",
+          "source": "1uFTx7VBCy0zz2tZxzgf-VjE9TAsYp_0k_transcript.webvtt",
+          "size": 88644,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Lecture 16: Recursion on Non-Numerics",
+      "topic": "Recursion on Non-Numerics",
+      "pageSlug": "lecture-16-recursion-on-non-numerics",
+      "video": {
+        "number": 16,
+        "title": "Lecture 16: Recursion on Non-numerics",
+        "youtubeId": "2XxGplWqXVQ",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-16-multi-version-2_360p_16_9.mp4",
+        "size": 121795322,
+        "transcript": "lec16-transcript.pdf",
+        "captions": "lec16-captions.vtt",
+        "transcriptSource": "1hkR9BnkJ6tULeV8uM23dCK3mIdAL-omX_transcript.pdf",
+        "captionsSource": "1hkR9BnkJ6tULeV8uM23dCK3mIdAL-omX_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 16: Recursion on Non-Numerics",
+          "name": "mit6_100l_f22_lec16.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec16.pdf",
+          "size": 1674226,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 16 Code",
+          "name": "mit6_100l_f22_lec16_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec16_code.py",
+          "size": 12513,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec16-transcript.pdf",
+          "source": "1hkR9BnkJ6tULeV8uM23dCK3mIdAL-omX_transcript.pdf",
+          "size": 98789,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec16-captions.vtt",
+          "source": "1hkR9BnkJ6tULeV8uM23dCK3mIdAL-omX_transcript.webvtt",
+          "size": 152220,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Lecture 17: Python Classes",
+      "topic": "Python Classes",
+      "pageSlug": "lecture-17-python-classes",
+      "video": {
+        "number": 17,
+        "title": "Lecture 17: Python Classes",
+        "youtubeId": "tsMrUdynbQQ",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-17-version-2_360p_16_9.mp4",
+        "size": 70597602,
+        "transcript": "lec17-transcript.pdf",
+        "captions": "lec17-captions.vtt",
+        "transcriptSource": "1jlgqPffb0jTD1GJmYxnukqh0qw6RY0Wv_transcript.pdf",
+        "captionsSource": "1jlgqPffb0jTD1GJmYxnukqh0qw6RY0Wv_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 17: Python Classes",
+          "name": "mit6_100l_f22_lec17.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec17.pdf",
+          "size": 1260008,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 17 Code",
+          "name": "mit6_100l_f22_lec17_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec17_code.py",
+          "size": 4927,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec17-transcript.pdf",
+          "source": "1jlgqPffb0jTD1GJmYxnukqh0qw6RY0Wv_transcript.pdf",
+          "size": 72102,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec17-captions.vtt",
+          "source": "1jlgqPffb0jTD1GJmYxnukqh0qw6RY0Wv_transcript.webvtt",
+          "size": 98097,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Lecture 18: More Python Class Methods",
+      "topic": "More Python Class Methods",
+      "pageSlug": "lecture-18-more-python-class-methods",
+      "video": {
+        "number": 18,
+        "title": "Lecture 18: More Python Class Methods",
+        "youtubeId": "gLnCmUkgUQk",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-18-multi-version-2_360p_16_9.mp4",
+        "size": 134105925,
+        "transcript": "lec18-transcript.pdf",
+        "captions": "lec18-captions.vtt",
+        "transcriptSource": "1H2sYXjAUBaCmU_W-8a9MZk-H-jYu14Za_transcript.pdf",
+        "captionsSource": "1H2sYXjAUBaCmU_W-8a9MZk-H-jYu14Za_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 18: More Python Class Methods",
+          "name": "mit6_100l_f22_lec18.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec18.pdf",
+          "size": 1332804,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 18 Code",
+          "name": "mit6_100l_f22_lec18_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec18_code.py",
+          "size": 14461,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec18-transcript.pdf",
+          "source": "1H2sYXjAUBaCmU_W-8a9MZk-H-jYu14Za_transcript.pdf",
+          "size": 100823,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec18-captions.vtt",
+          "source": "1H2sYXjAUBaCmU_W-8a9MZk-H-jYu14Za_transcript.webvtt",
+          "size": 148452,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Lecture 19: Inheritance",
+      "topic": "Inheritance",
+      "pageSlug": "lecture-19-inheritance",
+      "video": {
+        "number": 19,
+        "title": "Lecture 19: Inheritance",
+        "youtubeId": "rgM7Z9BNm1s",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-19-multi-version-2_360p_16_9.mp4",
+        "size": 125254604,
+        "transcript": "lec19-transcript.pdf",
+        "captions": "lec19-captions.vtt",
+        "transcriptSource": "1jicSeVbkfCJ6PQAOsX0o52Z998OZwDoD_transcript.pdf",
+        "captionsSource": "1jicSeVbkfCJ6PQAOsX0o52Z998OZwDoD_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 19: Inheritance",
+          "name": "mit6_100l_f22_lec19.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec19.pdf",
+          "size": 2423728,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 19 Code",
+          "name": "mit6_100l_f22_lec19_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec19_code.py",
+          "size": 16448,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec19-transcript.pdf",
+          "source": "1jicSeVbkfCJ6PQAOsX0o52Z998OZwDoD_transcript.pdf",
+          "size": 98550,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec19-captions.vtt",
+          "source": "1jicSeVbkfCJ6PQAOsX0o52Z998OZwDoD_transcript.webvtt",
+          "size": 147188,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Lecture 20: Fitness Tracker Object-Oriented Programming Example",
+      "topic": "Fitness Tracker Object-Oriented Programming Example",
+      "pageSlug": "lecture-20-fitness-tracker-object-oriented-programming-example",
+      "video": {
+        "number": 20,
+        "title": "Lecture 20: Fitness Tracker Object-Oriented Programming Example",
+        "youtubeId": "-wyc5FwzkcM",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-20-version-2_360p_16_9.mp4",
+        "size": 140992558,
+        "transcript": "lec20-transcript.pdf",
+        "captions": "lec20-captions.vtt",
+        "transcriptSource": "1l8mjRn1hi9LyjpsOLlLbZwxdsseNS_va_transcript.pdf",
+        "captionsSource": "1l8mjRn1hi9LyjpsOLlLbZwxdsseNS_va_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 20: Fitness Tracker Object Oriented Programming Example",
+          "name": "mit6_100l_f22_lec20.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec20.pdf",
+          "size": 1961837,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 20 Code",
+          "name": "mit6_100l_f22_lec20_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec20_code.zip",
+          "size": 5711,
+          "type": "zip",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec20-transcript.pdf",
+          "source": "1l8mjRn1hi9LyjpsOLlLbZwxdsseNS_va_transcript.pdf",
+          "size": 102522,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec20-captions.vtt",
+          "source": "1l8mjRn1hi9LyjpsOLlLbZwxdsseNS_va_transcript.webvtt",
+          "size": 150497,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Lecture 21: Timing Programs, Counting Operations",
+      "topic": "Timing Programs, Counting Operations",
+      "pageSlug": "lecture-21-timing-programs-counting-operations",
+      "video": {
+        "number": 21,
+        "title": "Lecture 21: Timing Programs and Counting Operations",
+        "youtubeId": "lvp4NfED6K4",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-21-version-2_360p_16_9.mp4",
+        "size": 59466379,
+        "transcript": "lec21-transcript.pdf",
+        "captions": "lec21-captions.vtt",
+        "transcriptSource": "1xvoC1C2Y-utkqO-wB9gc4lhFPNpM5Zjj_transcript.pdf",
+        "captionsSource": "1xvoC1C2Y-utkqO-wB9gc4lhFPNpM5Zjj_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 21: Timing Programs, Counting Operations",
+          "name": "mit6_100l_f22_lec21.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec21.pdf",
+          "size": 634407,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 21 Code",
+          "name": "mit6_100l_f22_lec21_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec21_code.py",
+          "size": 2319,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec21-transcript.pdf",
+          "source": "1xvoC1C2Y-utkqO-wB9gc4lhFPNpM5Zjj_transcript.pdf",
+          "size": 54306,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec21-captions.vtt",
+          "source": "1xvoC1C2Y-utkqO-wB9gc4lhFPNpM5Zjj_transcript.webvtt",
+          "size": 63849,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Lecture 22: Big Oh and Theta",
+      "topic": "Big Oh and Theta",
+      "pageSlug": "lecture-22-big-oh-and-theta",
+      "video": {
+        "number": 22,
+        "title": "Lecture 22: Big Oh and Theta",
+        "youtubeId": "RJhoT5PEf_0",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-22-version-2_360p_16_9.mp4",
+        "size": 140908119,
+        "transcript": "lec22-transcript.pdf",
+        "captions": "lec22-captions.vtt",
+        "transcriptSource": "1A8qBYXfGlxrh1AzmvG-kNRw4M5bppdQ-_transcript.pdf",
+        "captionsSource": "1A8qBYXfGlxrh1AzmvG-kNRw4M5bppdQ-_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 22: Big Oh and Theta",
+          "name": "mit6_100l_f22_lec22.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec22.pdf",
+          "size": 2375459,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 22 Code",
+          "name": "mit6_100l_f22_lec22_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec22_code.py",
+          "size": 9233,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec22-transcript.pdf",
+          "source": "1A8qBYXfGlxrh1AzmvG-kNRw4M5bppdQ-_transcript.pdf",
+          "size": 104620,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec22-captions.vtt",
+          "source": "1A8qBYXfGlxrh1AzmvG-kNRw4M5bppdQ-_transcript.webvtt",
+          "size": 156758,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Lecture 23: Complexity Classes Examples",
+      "topic": "Complexity Classes Examples",
+      "pageSlug": "lecture-23-complexity-classes-examples",
+      "video": {
+        "number": 23,
+        "title": "Lecture 23: Complexity Classes Examples",
+        "youtubeId": "loX34ct0hxs",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-23-version-2_360p_16_9.mp4",
+        "size": 127219520,
+        "transcript": "lec23-transcript.pdf",
+        "captions": "lec23-captions.vtt",
+        "transcriptSource": "1xR3e2ychp7hYL-4PwrUUucM6a_hYVwvo_transcript.pdf",
+        "captionsSource": "1xR3e2ychp7hYL-4PwrUUucM6a_hYVwvo_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 23: Complexity Classes Examples",
+          "name": "mit6_100l_f22_lec23.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec23.pdf",
+          "size": 2346758,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 23 Code",
+          "name": "mit6_100l_f22_lec23_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec23_code.py",
+          "size": 6266,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec23-transcript.pdf",
+          "source": "1xR3e2ychp7hYL-4PwrUUucM6a_hYVwvo_transcript.pdf",
+          "size": 103629,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec23-captions.vtt",
+          "source": "1xR3e2ychp7hYL-4PwrUUucM6a_hYVwvo_transcript.webvtt",
+          "size": 158212,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Lecture 24: Sorting Algorithms",
+      "topic": "Sorting Algorithms",
+      "pageSlug": "lecture-24-sorting-algorithms",
+      "video": {
+        "number": 24,
+        "title": "Lecture 24: Sorting Algorithms",
+        "youtubeId": "R8Rw9mIa7JQ",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-24-version-2_360p_16_9.mp4",
+        "size": 83164265,
+        "transcript": "lec24-transcript.pdf",
+        "captions": "lec24-captions.vtt",
+        "transcriptSource": "1VUHQTtGcGveZjWvzAwGFp2hH-QuimE7-_transcript.pdf",
+        "captionsSource": "1VUHQTtGcGveZjWvzAwGFp2hH-QuimE7-_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 24: Sorting Algorithms",
+          "name": "mit6_100l_f22_lec24.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec24.pdf",
+          "size": 7213540,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 24 Code",
+          "name": "mit6_100l_f22_lec24_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec24_code.py",
+          "size": 3339,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec24-transcript.pdf",
+          "source": "1VUHQTtGcGveZjWvzAwGFp2hH-QuimE7-_transcript.pdf",
+          "size": 69234,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec24-captions.vtt",
+          "source": "1VUHQTtGcGveZjWvzAwGFp2hH-QuimE7-_transcript.webvtt",
+          "size": 93552,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "title": "Lecture 25: Plotting",
+      "topic": "Plotting",
+      "pageSlug": "lecture-25-plotting",
+      "video": {
+        "number": 25,
+        "title": "Lecture 25: Plotting",
+        "youtubeId": "Jov7G7IpuLo",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-25-multi_360p_16_9.mp4",
+        "size": 127104976,
+        "transcript": "lec25-transcript.pdf",
+        "captions": "lec25-captions.vtt",
+        "transcriptSource": "1cvnthuuvW853odAxpelaAUZkddb8M-tf_transcript.pdf",
+        "captionsSource": "1cvnthuuvW853odAxpelaAUZkddb8M-tf_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 25: Plotting",
+          "name": "mit6_100l_f22_lec25.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec25.pdf",
+          "size": 5152292,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 25 Code",
+          "name": "mit6_100l_f22_lec25_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec25_code.zip",
+          "size": 1710080,
+          "type": "zip",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec25-transcript.pdf",
+          "source": "1cvnthuuvW853odAxpelaAUZkddb8M-tf_transcript.pdf",
+          "size": 98587,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec25-captions.vtt",
+          "source": "1cvnthuuvW853odAxpelaAUZkddb8M-tf_transcript.webvtt",
+          "size": 146040,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "title": "Lecture 26: List Access, Hashing, Simulations, and Wrap-Up",
+      "topic": "List Access, Hashing, Simulations, and Wrap-Up",
+      "pageSlug": "lecture-26-list-access-hashing-simulations-and-wrap-up",
+      "video": {
+        "number": 26,
+        "title": "Lecture 26: List Access, Hashing, Simulations, and Wrap-Up",
+        "youtubeId": "4H0GXzQ41t0",
+        "mp4": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6100l-lecture-26-multi_360p_16_9.mp4",
+        "size": 105799465,
+        "transcript": "lec26-transcript.pdf",
+        "captions": "lec26-captions.vtt",
+        "transcriptSource": "1Jf1_GNVjvRScJqmNBDRrxyK6igxPavZg_transcript.pdf",
+        "captionsSource": "1Jf1_GNVjvRScJqmNBDRrxyK6igxPavZg_transcript.webvtt"
+      },
+      "items": [
+        {
+          "title": "Lecture 26: List Access, Hashing, Simulations, and Wrap-Up",
+          "name": "mit6_100l_f22_lec26.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec26.pdf",
+          "size": 1317110,
+          "type": "pdf",
+          "external": false,
+          "listSlug": "lecture-notes",
+          "listTitle": "Lecture Notes"
+        },
+        {
+          "title": "Lecture 26 Code",
+          "name": "mit6_100l_f22_lec26_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec26_code.py",
+          "size": 3466,
+          "type": "py",
+          "external": false,
+          "listSlug": "lecture-code",
+          "listTitle": "Lecture Code"
+        },
+        {
+          "title": "英文字幕稿",
+          "name": "lec26-transcript.pdf",
+          "source": "1Jf1_GNVjvRScJqmNBDRrxyK6igxPavZg_transcript.pdf",
+          "size": 97116,
+          "type": "pdf",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        },
+        {
+          "title": "英文字幕（VTT）",
+          "name": "lec26-captions.vtt",
+          "source": "1Jf1_GNVjvRScJqmNBDRrxyK6igxPavZg_transcript.webvtt",
+          "size": 139927,
+          "type": "vtt",
+          "listSlug": "media",
+          "listTitle": "字幕与讲稿"
+        }
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "slug": "lecture-notes",
+      "title": "Lecture Notes",
+      "items": [
+        {
+          "title": "Lecture 1: Introduction",
+          "name": "mit6_100l_f22_lec01.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec01.pdf",
+          "size": 852103,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 2: Strings, Input/Output, and Branching",
+          "name": "mit6_100l_f22_lec02.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec02.pdf",
+          "size": 1187780,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 3: Iteration",
+          "name": "mit6_100l_f22_lec03.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec03.pdf",
+          "size": 761689,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 4: Loops over Strings, Guess-and-Check, Binary",
+          "name": "mit6_100l_f22_lec04.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec04.pdf",
+          "size": 1153138,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 5: Floats and Approximation Methods",
+          "name": "mit6_100l_f22_lec05.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec05.pdf",
+          "size": 909738,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 6: Bisection Search",
+          "name": "mit6_100l_f22_lec06.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec06.pdf",
+          "size": 810645,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 7: Decomposition, Abstraction, Functions",
+          "name": "mit6_100l_f22_lec07.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec07.pdf",
+          "size": 711563,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 8: Functions as Objects",
+          "name": "mit6_100l_f22_lec08.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec08.pdf",
+          "size": 1273757,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 9: Lambda Functions, Tuples, and Lists",
+          "name": "mit6_100l_f22_lec09.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec09.pdf",
+          "size": 864295,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 10: Lists, Mutability",
+          "name": "mit6_100l_f22_lec10.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec10.pdf",
+          "size": 1460485,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 11: Aliasing, Cloning",
+          "name": "mit6_100l_f22_lec11.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec11.pdf",
+          "size": 1202305,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 12: List Comprehension, Functions as Objects, Testing, Debugging",
+          "name": "mit6_100l_f22_lec12.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec12.pdf",
+          "size": 915157,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 13: Exceptions, Assertions",
+          "name": "mit6_100l_f22_lec13.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec13.pdf",
+          "size": 695971,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 14: Dictionaries",
+          "name": "mit6_100l_f22_lec14.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec14.pdf",
+          "size": 1077547,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 15: Recursion",
+          "name": "mit6_100l_f22_lec15.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec15.pdf",
+          "size": 984564,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 16: Recursion on Non-Numerics",
+          "name": "mit6_100l_f22_lec16.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec16.pdf",
+          "size": 1674226,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 17: Python Classes",
+          "name": "mit6_100l_f22_lec17.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec17.pdf",
+          "size": 1260008,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 18: More Python Class Methods",
+          "name": "mit6_100l_f22_lec18.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec18.pdf",
+          "size": 1332804,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 19: Inheritance",
+          "name": "mit6_100l_f22_lec19.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec19.pdf",
+          "size": 2423728,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 20: Fitness Tracker Object Oriented Programming Example",
+          "name": "mit6_100l_f22_lec20.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec20.pdf",
+          "size": 1961837,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 21: Timing Programs, Counting Operations",
+          "name": "mit6_100l_f22_lec21.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec21.pdf",
+          "size": 634407,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 22: Big Oh and Theta",
+          "name": "mit6_100l_f22_lec22.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec22.pdf",
+          "size": 2375459,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 23: Complexity Classes Examples",
+          "name": "mit6_100l_f22_lec23.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec23.pdf",
+          "size": 2346758,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 24: Sorting Algorithms",
+          "name": "mit6_100l_f22_lec24.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec24.pdf",
+          "size": 7213540,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 25: Plotting",
+          "name": "mit6_100l_f22_lec25.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec25.pdf",
+          "size": 5152292,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Lecture 26: List Access, Hashing, Simulations, and Wrap-Up",
+          "name": "mit6_100l_f22_lec26.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec26.pdf",
+          "size": 1317110,
+          "type": "pdf",
+          "external": false
+        }
+      ]
+    },
+    {
+      "slug": "lecture-code",
+      "title": "Lecture Code",
+      "items": [
+        {
+          "title": "Lecture 1 Code",
+          "name": "mit6_100l_f22_lec01_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec01_code.py",
+          "size": 2086,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 2 Code",
+          "name": "mit6_100l_f22_lec02_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec02_code.py",
+          "size": 7655,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 3 Code",
+          "name": "mit6_100l_f22_lec03_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec03_code.py",
+          "size": 6110,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 4 Code",
+          "name": "mit6_100l_f22_lec04_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec04_code.py",
+          "size": 10298,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 5 Code",
+          "name": "mit6_100l_f22_lec05_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec05_code.py",
+          "size": 4227,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 6 Code",
+          "name": "mit6_100l_f22_lec06_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec06_code.py",
+          "size": 4622,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 7 Code",
+          "name": "mit6_100l_f22_lec07_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec07_code.py",
+          "size": 6041,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 8 Code",
+          "name": "mit6_100l_f22_lec08_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec08_code.py",
+          "size": 8756,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 9 Code",
+          "name": "mit6_100l_f22_lec09_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec09_code.py",
+          "size": 6704,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 10 Code",
+          "name": "mit6_100l_f22_lec10_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec10_code.py",
+          "size": 7654,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 11 Code",
+          "name": "mit6_100l_f22_lec11_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec11_code.py",
+          "size": 6993,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 12 Code",
+          "name": "mit6_100l_f22_lec12_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec12_code.zip",
+          "size": 5344,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Lecture 13 Code",
+          "name": "mit6_100l_f22_lec13_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec13_code.py",
+          "size": 8018,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 14 Code",
+          "name": "mit6_100l_f22_lec14_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec14_code.py",
+          "size": 21904,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 15 Code",
+          "name": "mit6_100l_f22_lec15_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec15_code.py",
+          "size": 4403,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 16 Code",
+          "name": "mit6_100l_f22_lec16_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec16_code.py",
+          "size": 12513,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 17 Code",
+          "name": "mit6_100l_f22_lec17_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec17_code.py",
+          "size": 4927,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 18 Code",
+          "name": "mit6_100l_f22_lec18_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec18_code.py",
+          "size": 14461,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 19 Code",
+          "name": "mit6_100l_f22_lec19_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec19_code.py",
+          "size": 16448,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 20 Code",
+          "name": "mit6_100l_f22_lec20_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec20_code.zip",
+          "size": 5711,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Lecture 21 Code",
+          "name": "mit6_100l_f22_lec21_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec21_code.py",
+          "size": 2319,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 22 Code",
+          "name": "mit6_100l_f22_lec22_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec22_code.py",
+          "size": 9233,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 23 Code",
+          "name": "mit6_100l_f22_lec23_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec23_code.py",
+          "size": 6266,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 24 Code",
+          "name": "mit6_100l_f22_lec24_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec24_code.py",
+          "size": 3339,
+          "type": "py",
+          "external": false
+        },
+        {
+          "title": "Lecture 25 Code",
+          "name": "mit6_100l_f22_lec25_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec25_code.zip",
+          "size": 1710080,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Lecture 26 Code",
+          "name": "mit6_100l_f22_lec26_code.py",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_lec26_code.py",
+          "size": 3466,
+          "type": "py",
+          "external": false
+        }
+      ]
+    },
+    {
+      "slug": "problem-sets",
+      "title": "Problem Sets",
+      "items": [
+        {
+          "title": "Problem Set 0",
+          "name": "mit6_100l_f22_ps0.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps0.pdf",
+          "size": 305328,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Problem Set 0 Code",
+          "name": "mit6_100l_f22_ps0_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps0_code.zip",
+          "size": 6038120,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Problem Set 1",
+          "name": "mit6_100l_f22_ps1.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps1.pdf",
+          "size": 387775,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Problem Set 1 Code",
+          "name": "mit6_100l_f22_ps1_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps1_code.zip",
+          "size": 5293,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Problem Set 2",
+          "name": "mit6_100l_f22_ps2.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps2.pdf",
+          "size": 478662,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Problem Set 2 Code",
+          "name": "mit6_100l_f22_ps2_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps2_code.zip",
+          "size": 190816,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Problem Set 3",
+          "name": "mit6_100l_f22_ps3.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps3.pdf",
+          "size": 619033,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Problem Set 3 Code",
+          "name": "mit6_100l_f22_ps3_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps3_code.zip",
+          "size": 17205,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Problem Set 4",
+          "name": "mit6_100l_f22_ps4.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps4.pdf",
+          "size": 585660,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Problem Set 4 Code",
+          "name": "mit6_100l_f22_ps4_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps4_code.zip",
+          "size": 210130,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Problem Set 5",
+          "name": "mit6_100l_f22_ps5.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps5.pdf",
+          "size": 490898,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Problem Set 5 Code",
+          "name": "mit6_100l_f22_ps5_code.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_ps5_code.zip",
+          "size": 2560023,
+          "type": "zip",
+          "external": false
+        }
+      ]
+    },
+    {
+      "slug": "recitations",
+      "title": "Recitations",
+      "items": [
+        {
+          "title": "Recitation 1 Notes",
+          "name": "mit6_100l_f22_rec01.pdf",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec01.pdf",
+          "size": 141646,
+          "type": "pdf",
+          "external": false
+        },
+        {
+          "title": "Recitation 2 Notes and Code",
+          "name": "mit6_100l_f22_rec02.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec02.zip",
+          "size": 19391,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 3 Notes and Code",
+          "name": "mit6_100l_f22_rec03.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec03.zip",
+          "size": 145972,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 4 Notes and Code",
+          "name": "mit6_100l_f22_rec04.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec04.zip",
+          "size": 23181,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 5 Notes and Code",
+          "name": "mit6_100l_f22_rec05.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec05.zip",
+          "size": 19200,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 6 Notes and Code",
+          "name": "mit6_100l_f22_rec06.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec06.zip",
+          "size": 23801,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 7 Notes and Code",
+          "name": "mit6_100l_f22_rec07.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec07.zip",
+          "size": 154813,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 8 Notes and Code",
+          "name": "mit6_100l_f22_rec08.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec08.zip",
+          "size": 90315,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 9 Notes and Code",
+          "name": "mit6_100l_f22_rec09.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec09.zip",
+          "size": 428909,
+          "type": "zip",
+          "external": false
+        },
+        {
+          "title": "Recitation 10 Notes and Code",
+          "name": "mit6_100l_f22_rec10.zip",
+          "file": "/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/mit6_100l_f22_rec10.zip",
+          "size": 212279,
+          "type": "zip",
+          "external": false
+        }
+      ]
+    }
+  ],
+  "zipUrl": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/6.100l-fall-2022.zip"
+}

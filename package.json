@@ -8,7 +8,8 @@
     "dev": "vitepress dev .",
     "build": "vitepress build .",
     "preview": "vitepress preview .",
-    "check:links": "node scripts/check-links.mjs"
+    "check:links": "node scripts/check-links.mjs",
+    "ocw:add": "node scripts/ocw/add-course.mjs"
   },
   "devDependencies": {
     "@mdit/plugin-katex": "^0.25.2",
