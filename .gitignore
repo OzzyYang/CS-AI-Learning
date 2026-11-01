@@ -1,0 +1,16 @@
+# 依赖
+node_modules/
+.npm-cache/
+pnpm-store/
+.tmp/
+
+# VitePress 构建与缓存
+dist/
+.vitepress/cache/
+.vitepress/dist/
+
+# 本地环境与日志
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-label="计算机存储层次示意">
+  <defs>
+    <linearGradient id="tier1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f766e" />
+      <stop offset="1" stop-color="#14b8a6" />
+    </linearGradient>
+    <linearGradient id="tier2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d9488" />
+      <stop offset="1" stop-color="#22d3ee" />
+    </linearGradient>
+    <linearGradient id="tier3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0891b2" />
+      <stop offset="1" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="tier4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4338ca" />
+      <stop offset="1" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="tier5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6d28d9" />
+      <stop offset="1" stop-color="#a78bfa" />
+    </linearGradient>
+  </defs>
+
+  <text x="30" y="34" font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="16" font-weight="700" fill="#64748b">存储层次：容量、延迟与成本</text>
+  <text x="870" y="34" text-anchor="end" font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="11" fill="#94a3b8">越靠上越快，越靠下越大</text>
+
+  <g font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="13" font-weight="600" fill="#ffffff">
+    <rect x="330" y="62" width="240" height="42" rx="10" fill="url(#tier1)" />
+    <text x="450" y="88" text-anchor="middle">寄存器 · &lt; 1 ns</text>
+
+    <rect x="255" y="116" width="390" height="42" rx="10" fill="url(#tier2)" />
+    <text x="450" y="142" text-anchor="middle">L1 / L2 缓存 · 1–10 ns</text>
+
+    <rect x="180" y="170" width="540" height="42" rx="10" fill="url(#tier3)" />
+    <text x="450" y="196" text-anchor="middle">L3 缓存 · 10–40 ns</text>
+
+    <rect x="105" y="224" width="690" height="42" rx="10" fill="url(#tier4)" />
+    <text x="450" y="250" text-anchor="middle">主存 DRAM · 50–100 ns</text>
+
+    <rect x="30" y="278" width="840" height="42" rx="10" fill="url(#tier5)" />
+    <text x="450" y="304" text-anchor="middle">SSD / 磁盘 · 微秒–毫秒</text>
+  </g>
+
+  <g font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="10.5" fill="#94a3b8">
+    <text x="30" y="348">容量：KB → GB → TB</text>
+    <text x="450" y="348" text-anchor="middle">局部性原理让高频数据停留在上层</text>
+    <text x="870" y="348" text-anchor="end">单位成本：高 → 低</text>
+  </g>
+</svg>

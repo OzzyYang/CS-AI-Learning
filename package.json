@@ -1,0 +1,20 @@
+{
+  "name": "cs-ai-learning",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CS-AI-Learning：Markdown-first 的个人计算机科学与人工智能四年学习平台",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "preview": "vitepress preview .",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "devDependencies": {
+    "@mdit/plugin-katex": "^0.25.2",
+    "katex": "^0.16.44",
+    "mermaid": "^11.17.2",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.44"
+  }
+}
