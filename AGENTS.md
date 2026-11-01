@@ -31,6 +31,7 @@ CS-AI-Learning/
 ├─ 交互实验/               交互式学习页面
 ├─ public/                 静态资源（logo、favicon、独立 SVG 图）
 ├─ scripts/                链接检查等维护脚本
+├─ .github/workflows/       GitHub Pages 自动部署工作流
 ├─ .vitepress/
 │  ├─ config.mts           站点配置、导航、搜索、插件
 │  ├─ data/content.ts      构建期扫描 Markdown，生成课程/专题数据

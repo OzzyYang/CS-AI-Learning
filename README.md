@@ -55,6 +55,12 @@ CS + AI 知识体系。
 - 统一主题与组件：`.vitepress/theme/`
 - 构建产物：`dist/`（已在 `.gitignore` 中忽略，不提交）
 
+### 在线站点
+
+- GitHub Pages：<https://ozzyyang.github.io/CS-AI-Learning/>
+- 推送到 `master` 后，由 `.github/workflows/deploy.yml` 自动构建并部署，构建时 base 为 `/CS-AI-Learning/`。
+- 也可以手动触发 `Deploy VitePress site to Pages` 工作流。
+
 ### 本地开发
 
 环境：Node.js 20+（本项目在 Node 24 下验证）。
